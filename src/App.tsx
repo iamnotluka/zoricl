@@ -1,7 +1,6 @@
 import './App.css';
 import ProgressBar from './components/ProgressBar';
 import { PageContents } from './components/PageContents';
-import Button from './components/Button';
 
 const App = () => {
   return (
