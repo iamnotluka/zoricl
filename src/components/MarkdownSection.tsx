@@ -3,6 +3,7 @@ import Markdown from 'react-markdown';
 
 interface MarkdownSectionProps {
   markdownFileName: string;
+  cenralise: boolean;
 }
 
 const loadFile = async (markdownFileName: string) => {
@@ -25,7 +26,7 @@ const loadFile = async (markdownFileName: string) => {
   }
 };
 
-export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileName }) => {
+export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileName, cenralise }) => {
   
   const [fileMarkdownData, setFileMarkdownData] = useState<string | null>(null);
 
@@ -44,7 +45,7 @@ export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileNa
   }, [markdownFileName]);
 
   return (
-    <div>
+    <div className={cenralise ? "text-align-center markdown-section" : "markdown-section"}>
       {fileMarkdownData !== null ? (
         <Markdown>{fileMarkdownData}</Markdown>
       ) : (

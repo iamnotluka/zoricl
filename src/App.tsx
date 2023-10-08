@@ -1,9 +1,16 @@
+import './App.css';
 import { MarkdownSection } from './components/MarkdownSection';
+import Markdown from 'react-markdown';
+import ProgressBar from './components/ProgressBar';
+import { PageContents } from './components/PageContents';
 
-function App() {
+const App = () => {
   return (
-    <div className="main-stuff">
-      <MarkdownSection markdownFileName='test_blog_page.txt'/>
+    <div className="chat-gpt-told-me-to-make-this-to-centralize-div">
+      <div className="chatgpt-how-do-centralize-div">
+        <ProgressBar/>
+        <PageContents/>
+      </div>
     </div>
   );
 }

@@ -1,10 +1,71 @@
 :root {
-  --primary: #121212;
-  --secondary-color: #ff6347;
+  --primary: #080808;
+  --sans: "Open Sans", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+  --h1-font-size: 55px;
+  --p-font-size: 16px;
 }
 
-.main-stuff {
+body {
+  font-family: var(--sans);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
   background-color: var(--primary);
-  height: 100vh;
-  width: 100vw;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 200px;
+  flex-grow: 0 !important;
+}
+
+.chat-gpt-told-me-to-make-this-to-centralize-div {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.chatgpt-how-do-centralize-div {
+  width: 612px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.chatgpt-how-do-centralize-div > * {
+  flex-grow: 1; /* Makes each child take up all available vertical space */
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.markdown-section {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #ac5cf7, #e91e63, #f8a729);
+  color: #fff; /* Change to your desired text color */
+  padding: 4px 0; /* Adjust the padding as needed */
+  text-align: center;
+  z-index: 100; /* Ensure it appears above other content */
+  width: 0; /* Initial width is 0 */
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+p {
+  font-size: var(--p-font-size);
 }
