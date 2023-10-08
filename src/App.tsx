@@ -1,4 +1,4 @@
-import { MarkdownSection } from './blog-pages/MarkdownSection';
+import { MarkdownSection } from './components/MarkdownSection';
 
 function App() {
   return (
