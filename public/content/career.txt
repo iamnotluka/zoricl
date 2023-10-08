@@ -1,0 +1,25 @@
+### Career
+#### **Amazon**
+ * March 2023 - Present **SDE 2**
+ * March 2021 - March 2023 **SDE 1**
+
+Worked as a full stack engineer developing technologies to improve pickup experience for Amazon Fresh customers until August 2022. 
+
+Currently, developing compliance technology for Amazon seller platform.
+
+#### **ND Agency**
+  * November 2022 - Present **CEO**
+
+Helping construction professionals scale their businesses by implementing systems that produce profitable, predictable & trackable flows of customers on demand.
+
+See: *[www.niovadigital.com](https://www.niovadigital.com)*
+
+#### **VirtualMgr**
+ * November 2020 - March 2021 **Junior Developer**
+ * August 2020 - November 2020 **Intern**
+
+Working on some cool basic stuff.
+
+#### **University**
+* November 2020: Graduated CS majoring in AI and Data Science from Griffith University.
+* March 2018: Wrote my first line of code.

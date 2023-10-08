@@ -1,8 +1,7 @@
 import './App.css';
-import { MarkdownSection } from './components/MarkdownSection';
-import Markdown from 'react-markdown';
 import ProgressBar from './components/ProgressBar';
 import { PageContents } from './components/PageContents';
+import Button from './components/Button';
 
 const App = () => {
   return (

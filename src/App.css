@@ -1,11 +1,14 @@
 :root {
   --primary: #080808;
-  --sans: "Open Sans", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
-  --h1-font-size: 55px;
-  --p-font-size: 16px;
+  --sans: "Roboto","SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
+  --h2-font-size: 50px;
+  --h3-font-size: 35px;
+  --h4-font-size: 25px;
+  --p-font-size: 17px;
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   font-family: var(--sans);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer/Edge */
@@ -34,21 +37,13 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   height: 100%;
-}
-
-.chatgpt-how-do-centralize-div > * {
-  flex-grow: 1; /* Makes each child take up all available vertical space */
+  padding: 0.75rem;
 }
 
 .text-align-center {
   text-align: center;
-}
-
-.markdown-section {
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 .progress-bar {
@@ -57,15 +52,49 @@ body::-webkit-scrollbar {
   left: 0;
   background: linear-gradient(to right, #ac5cf7, #e91e63, #f8a729);
   color: #fff; /* Change to your desired text color */
-  padding: 4px 0; /* Adjust the padding as needed */
+  padding: 10px 0; /* Adjust the padding as needed */
   text-align: center;
   z-index: 100; /* Ensure it appears above other content */
   width: 0; /* Initial width is 0 */
 }
 
-h1 {
-  font-size: var(--h1-font-size);
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size)
+}
+h4 {
+  font-size: var(--h4-font-size);
 }
 p {
   font-size: var(--p-font-size);
+  line-height: 130%;
+}
+
+.primary-button {
+  background: none;
+  color: white;
+  font-family: var(--sans);
+  font-size: var(--p-font-size);
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 200px;
+}
+
+.primary-button:hover {
+  background-color: white;
+  color: var(--primary);
+  transition: 0.2s;
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+a {
+  color: white;
 }
