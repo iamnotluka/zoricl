@@ -1,14 +1,15 @@
 import { MarkdownSection } from './MarkdownSection'
 import Button from './Button'
+import { useState } from 'react';
 
 export const PageContents = () => {
   const linkedinURL = 'https://www.linkedin.com/in/luka-zoric';
+  const [view, setView] = useState('home');
 
   return (
     <div>
-        <MarkdownSection markdownFileName='introduction.txt'  centralise={false}/>
-        <Button url={linkedinURL} label='Add me on LinkedIn'></Button>
-        <MarkdownSection markdownFileName='intro_page_content.txt' centralise={false}/>
+        {view == 'home' && <MarkdownSection markdownFileName='introduction.txt'  centralise={false}/>}
+        {view == 'career' && <MarkdownSection markdownFileName='intro_page_content.txt' centralise={false}/>}
     </div>
   )
 }
