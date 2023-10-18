@@ -1,6 +1,7 @@
 import { MarkdownSection } from './MarkdownSection'
 import { useState } from 'react';
 import { Header } from './Header';
+import Career from './pages/Career';
 
 export const PageContents = () => {
   const [view, setView] = useState('home');
@@ -23,7 +24,7 @@ export const PageContents = () => {
         {/* Home page */}
         {view == 'home' && homePage}
         {/* Other Pages */}
-        {view == 'career' && <MarkdownSection markdownFileName='career.txt' centralise={false}/>}
+        {view == 'career' && <Career/>}
     </div>
     </div>
   )
