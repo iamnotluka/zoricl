@@ -52,9 +52,11 @@ Stats:
 
 * Still working at Amazon. Yet, a little bored.
 
-* Found out about this marketing stuff. Started learning about Facebook ads. Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. 
+* Found out about this marketing stuff. Started learning about Facebook ads.
 
-* Again realised that reversing binary trees is where my head is at.
+* Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. Again realised that reversing binary trees is where my head is at.
+
+**Current: FANG**
 
 * Worked hard to get good at software, became and SDE 2 (L5).
 
