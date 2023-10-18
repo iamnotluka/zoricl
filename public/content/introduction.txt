@@ -24,6 +24,15 @@ My career can be summed up like this:
 
 * Worked my way into my first IT role working as a Junior JavaScript Developer with [VirtualMgr](https://virtualmgr.com/).
 
-* Bought a house and realised that my income wont be enough so I had to look for a better job.
+* Bought a house and realised that my income wont be enough to survive so I had to look for a better job.
 
 * Did every leet code question I could and got hired as an SDE 1 at Amazon.
+
+* Found out about this marketing stuff online and started learning about Facebook ads. Started selling it for clients. Super easy, good money, hate doing it.
+
+* Worked hard to get good at software, feel in love with it, became and SDE 2 at Amazon.
+
+There's a lot more stories I can tell but that is a brief summary of my career.
+
+#### Knowledge Base
+I also like to learn a lot. Check out my blog you might find something useful.
