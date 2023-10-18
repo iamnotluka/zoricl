@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'SF-Pro';
-  src: url('/public/assets/fonts/SF-Pro.ttf') format('truetype');
+  font-family: 'NotesFont';
+  src: url('/public/assets/fonts/NotesFont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   --primary: #080808;
-  --sans: "SF-Pro", "SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
+  --sans: "NotesFont", "SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
   --h2-font-size: 50px;
   --h3-font-size: 35px;
   --h4-font-size: 25px;
