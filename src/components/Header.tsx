@@ -6,11 +6,10 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({previousPage}) => {
-    const instagramLink = '';
     return (
         <div className="header">
-            <Link to={previousPage}><p><i className='fa fa-angle-left fa-2x'></i> Back</p></Link>
-            {/* TODO: Add share button */}
+            {previousPage != 'none' && <Link to={previousPage}><p><i className='fa fa-angle-left fa-2x'></i> Back</p></Link>}
+            {previousPage == 'none' && <div className='disabled-back'><p><i className='fa fa-angle-left fa-2x'></i> Back</p></div>}
         </div>
     )
 }

@@ -1,0 +1,23 @@
+#### Happniess Algorithm
+
+Neat framework that works from me. Check it out here. Got it from book called Almanak of Naval Ravikant.
+- Yanis' smile
+- Good relationships
+  - Friends, Family, Partner
+- Health
+  - Excersise
+    - High Intensity Training, Sports, Rest
+    - Diet 
+        - NaturalFoods, Intermittent Fasting, Plants
+    - Sleep
+      - No alarms, 8-9h of sleep, Circadian rythm
+- Wealth
+  - Income
+    - Accountability
+      - Personal Branding, Personal platform, taking calculated risks
+    - Leverage
+        - Capital, People, Intelelectual property
+    - Specific Knowledge
+      - Doing something that is hard to train to do
+  - ROI
+    - Buy and hold, Valuations, Margins of safety

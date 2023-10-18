@@ -10,7 +10,7 @@
   --sans: "NotesFont", "SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
   --h2-font-size: 50px;
   --h3-font-size: 35px;
-  --h4-font-size: 25px;
+  --h4-font-size: 30px;
   --p-font-size: 17px;
 }
 
@@ -68,6 +68,11 @@ p {
   line-height: 130%;
 }
 
+ul {
+  font-size: var(--p-font-size);
+  line-height: 130%;
+}
+
 .primary-button {
   background: none;
   color: white;
@@ -92,7 +97,7 @@ h3 {
 }
 
 a {
-  color: white;
+  color: #DCB13D !important;
 }
 
 img {
@@ -125,8 +130,7 @@ ul {
   margin-left: -1rem;
 }
 
-.header a {
-  padding-left: 10px;
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -134,6 +138,10 @@ ul {
   background-color: #080808;
   width: 100%;
   position: fixed;
+}
+
+.header a {
+  padding-left: 10px;
   text-decoration: none !important;
 }
 
@@ -146,4 +154,9 @@ ul {
   display: flex;
   align-items: center;
   color: #DCB13D !important;
+}
+
+.disabled-back p {
+  padding-left: 10px;
+  color: gray !important;
 }
