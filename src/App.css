@@ -53,18 +53,6 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: linear-gradient(to right, #ac5cf7, #e91e63, #f8a729);
-  color: #fff; /* Change to your desired text color */
-  padding: 10px 0; /* Adjust the padding as needed */
-  text-align: center;
-  z-index: 100; /* Ensure it appears above other content */
-  width: 0; /* Initial width is 0 */
-}
-
 h2 {
   font-size: var(--h2-font-size);
 }
@@ -124,14 +112,38 @@ img {
 
 .date-signature {
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: -1.5rem;
 }
 
 .date-signature p {
-  font-size: 0.9rem !important;
+  font-size: 0.96rem !important;
   color: #87868C;
 }
 
 ul {
   margin-left: -1rem;
+}
+
+.header a {
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #080808;
+  width: 100%;
+  position: fixed;
+  text-decoration: none !important;
+}
+
+.header i {
+  margin-right: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #DCB13D !important;
 }

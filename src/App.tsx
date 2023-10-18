@@ -1,6 +1,6 @@
 import './App.css';
-import ProgressBar from './components/ProgressBar';
 import { PageContents } from './components/PageContents';
+import 'font-awesome/css/font-awesome.min.css';
 
 const App = () => {
   return (
