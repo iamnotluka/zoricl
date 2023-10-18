@@ -6,6 +6,18 @@ interface HeaderProps {
     previousPage: string;
 }
 
+const darkIcon = (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+      <i className="fa fa-moon-o" style={{ fontSize: '10px', marginLeft: '8px', color: 'gray' }} />
+    </div>
+  );
+  
+  const lightIcon = (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+      <i className="fa fa-sun-o" style={{ fontSize: '10px', color: '#DCB13D', marginLeft: '-25px' }} />
+    </div>
+  );
+  
 export const Header: React.FC<HeaderProps> = ({previousPage}) => {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -20,7 +32,7 @@ export const Header: React.FC<HeaderProps> = ({previousPage}) => {
             <Toggle
             checked={darkMode}
             onChange={handleToggle}
-            icons={false}
+            icons={{ checked: darkIcon, unchecked: lightIcon }}
             aria-label='Dark mode toggle'/>
         </div>
     )
