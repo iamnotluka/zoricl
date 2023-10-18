@@ -5,7 +5,17 @@
   font-style: normal;
 }
 
+body, div, p, h4 {
+  transition: background-color 0.1s ease;
+}
+
 :root {
+  transition: all 0.1s;
+  --background-color: #080808;
+  --yellow-color: #DCB13D;
+  --yellow-color-weight: 400;
+  --headers-color: white;
+  --text-color: white;
   --primary: #080808;
   --sans: "NotesFont", "SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
   --h2-font-size: 50px;
@@ -14,13 +24,28 @@
   --p-font-size: 17px;
 }
 
+[data-theme="light"] {
+  --background-color: white;
+  --yellow-color: #ffc527;
+  --headers-color: #434343;
+  --text-color: #404040;
+  --yellow-color-weight: 400;
+}
+
+html {
+  background: var(--background-color);
+}
 body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--sans);
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer/Edge */
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h4 {
+  color: var(--headers-color);
 }
 
 body::-webkit-scrollbar {
@@ -97,17 +122,12 @@ h3 {
 }
 
 a {
-  color: #DCB13D !important;
+  font-weight: var(--yellow-color-weight);
+  color: var(--yellow-color) !important;
 }
 
 img {
   width: 100%;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .page-contents {
@@ -131,12 +151,15 @@ ul {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 612px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #080808;
+  background-color: var(--background-color);
   width: 100%;
   position: fixed;
 }
@@ -154,12 +177,13 @@ ul {
   font-size: 16px;
   display: flex;
   align-items: center;
-  color: #DCB13D !important;
+  color: var(--yellow-color) !important;
 }
 
 .disabled-back p {
   padding-left: 10px;
-  color: gray !important;
+  color: #08080800 !important;
+  transition: all 0.1s ease;
 }
 
 /* styles.css */
@@ -180,7 +204,7 @@ ul {
   background-color: none !important;
 }
 .react-toggle-track {
-  background-color: #87868C !important;
+  background-color: #e1e1e1 !important;
 }
 
 .react-toggle--checked .react-toggle-track {
@@ -188,7 +212,7 @@ ul {
 }
 
 .react-toggle-thumb {
-  background-color: #DCB13D !important;
+  background-color: var(--yellow-color) !important;
   border: none !important;
 }
 

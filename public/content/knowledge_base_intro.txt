@@ -4,7 +4,4 @@ A search box will go here.
 
 List of resources that I find useful.
 
-Blogs...
-
-#### Blog title one
-#### Blog title two
+*Coming soon...*
