@@ -106,3 +106,18 @@ h3 {
 a {
   color: white;
 }
+
+img {
+  width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-contents {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

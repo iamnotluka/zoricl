@@ -1,15 +1,30 @@
 import { MarkdownSection } from './MarkdownSection'
-import Button from './Button'
 import { useState } from 'react';
+import { Header } from './Header';
 
 export const PageContents = () => {
-  const linkedinURL = 'https://www.linkedin.com/in/luka-zoric';
   const [view, setView] = useState('home');
+
+  const showView = (viewName: string) => {
+    setView(viewName);
+  };
+
+  const homePage = 
+  <div>
+    <MarkdownSection markdownFileName='introduction.txt'  centralise={false}/>
+    <h4>Career</h4>
+    <p>I've done a couple of things in my life. Read my <a href="#" onClick={(e) => { e.preventDefault(); showView('career'); }}>career summary here</a>.</p>
+  </div>
 
   return (
     <div>
-        {view == 'home' && <MarkdownSection markdownFileName='introduction.txt'  centralise={false}/>}
-        {view == 'career' && <MarkdownSection markdownFileName='intro_page_content.txt' centralise={false}/>}
+    {view != 'home' && <Header/>}
+    <div className='page-contents'>
+        {/* Home page */}
+        {view == 'home' && homePage}
+        {/* Other Pages */}
+        {view == 'career' && <MarkdownSection markdownFileName='career.txt' centralise={false}/>}
+    </div>
     </div>
   )
 }

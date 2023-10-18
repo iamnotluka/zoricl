@@ -1,38 +1,7 @@
-### Hey there! My name is Luka Zoric.
+### Hey there, welcome. I'm Luka Zoric.
 
-I am a software development engineer working for Amazon in Brisbane, Austraila.
-
-This intro used to be a little different not long ago as I was fairly decent at football. However I didn't focus hard enough during injury prevention and ended up slipping into an IT role instead.
-
-About a year ago, I gained interest in business and founded an agency which helps businesses scale through Facebook ads.
-
-I scaled this agency to 10k/month fairly quickly but also realised it's not something I want to do full time.
+I am a software development engineer working for Amazon in Brisbane, Austraila. 
 
 I spend most of my time learning and building cool stuff.
 
 To add me on LinkedIn, click [here](https://www.linkedin.com/in/luka-zoric/).
-
-#### Career
-My career can be summed up like this:
-* Moved to Brisbane with $500 in my account in the late 2019 for my intership in AECOM.
-
-* Studied AI and Data Science while playing semi profesional footy for Holland Park Hawks FC.
-
-* Covid happened. Focusing on studies and building personal projects, learning how to trade, do marketing and sell stuff online.
-
-* Graduated uni in November 2020 - put "I never let school interfere with my education" in my LinkedIn bio to justify my garbage GPA.
-
-* Worked my way into my first IT role working as a Junior JavaScript Developer with [VirtualMgr](https://virtualmgr.com/).
-
-* Bought a house and realised that my income wont be enough to survive so I had to look for a better job.
-
-* Did every leet code question I could and got hired as an SDE 1 at Amazon.
-
-* Found out about this marketing stuff online and started learning about Facebook ads. Started selling it for clients. Super easy, good money, hate doing it.
-
-* Worked hard to get good at software, feel in love with it, became and SDE 2 at Amazon.
-
-There's a lot more stories I can tell but that is a brief summary of my career.
-
-#### Knowledge Base
-I also like to learn a lot. Check out my blog you might find something useful.

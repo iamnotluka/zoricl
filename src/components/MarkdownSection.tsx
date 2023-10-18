@@ -45,7 +45,7 @@ export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileNa
   }, [markdownFileName]);
 
   return (
-    <div className={centralise ? "text-align-center" : ""}>
+    <div className={centralise ? "text-align-center markdown-text" : "markdown-text"}>
       {fileMarkdownData !== null ? (
         <Markdown>{fileMarkdownData}</Markdown>
       ) : (
