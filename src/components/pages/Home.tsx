@@ -14,6 +14,9 @@ export default function Home() {
     <p>I've done a couple of things in my life. Read my <Link to="/career">career summary here</Link>.</p>
     <h4>Happiness Algorithm</h4>
     <p>A neat framework and resources that work for me. Check it out <Link to="/happiness-algorithm">here.</Link></p>
+    <h4>Knowledge Base</h4>
+    <p>Knowledge kept is potential unrealized. - ChatGPT</p>
+    <p>Look at my knowledge base <Link to="/knowledge-base">here.</Link></p>
   </div>
   )
 }
