@@ -118,7 +118,7 @@ img {
 .date-signature {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: -1.5rem;
+  margin-bottom: -2rem;
 }
 
 .date-signature p {
@@ -131,6 +131,7 @@ ul {
 }
 
 .header {
+  max-width: 612px;
   position: fixed;
   top: 0;
   left: 0;
@@ -159,4 +160,38 @@ ul {
 .disabled-back p {
   padding-left: 10px;
   color: gray !important;
+}
+
+/* styles.css */
+.react-toggle-track {
+  margin-right: 20px;
+}
+
+.react-toggle-thumb,
+.react-toggle--checked .react-toggle-thumb {
+  box-shadow: none !important;
+}
+
+.react-toggle:hover .react-toggle-track {
+  background-color: none !important;
+}
+
+.react-toggle--checked:hover .react-toggle-track {
+  background-color: none !important;
+}
+.react-toggle-track {
+  background-color: #f0f0f0 !important;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background-color: #333 !important;
+}
+
+.react-toggle-thumb {
+  background-color: #333 !important;
+  border: none !important;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  background-color: #f0f0f0 !important;
 }
