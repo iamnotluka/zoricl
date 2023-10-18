@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Toggle from 'react-toggle';
 
@@ -19,11 +19,15 @@ const darkIcon = (
   );
   
 export const Header: React.FC<HeaderProps> = ({previousPage}) => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
 
     const handleToggle = () => {
         setDarkMode(!darkMode);
     };
+
+    useEffect(() => {
+        document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+      }, [darkMode]);
 
     return (
         <div className="header">
