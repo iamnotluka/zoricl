@@ -32,7 +32,8 @@ export const Header: React.FC<HeaderProps> = ({previousPage}) => {
             <Toggle
             checked={darkMode}
             onChange={handleToggle}
-            icons={{ checked: darkIcon, unchecked: lightIcon }}
+            icons={false}
+            // icons={{ checked: darkIcon, unchecked: lightIcon }}
             aria-label='Dark mode toggle'/>
         </div>
     )
