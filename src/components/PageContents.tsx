@@ -2,6 +2,8 @@ import { MarkdownSection } from './MarkdownSection'
 import { useState } from 'react';
 import { Header } from './Header';
 import Career from './pages/Career';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 export const PageContents = () => {
   const [view, setView] = useState('home');
@@ -18,14 +20,14 @@ export const PageContents = () => {
   </div>
 
   return (
-    <div>
-    {view != 'home' && <Header/>}
     <div className='page-contents'>
-        {/* Home page */}
-        {view == 'home' && homePage}
-        {/* Other Pages */}
-        {view == 'career' && <Career/>}
-    </div>
+      <Header></Header>
+        <Router>
+        <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/career" element={<Career/>} />
+          </Routes>
+      </Router>
     </div>
   )
 }

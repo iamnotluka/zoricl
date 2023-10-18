@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'NotesFont';
-  src: url('/public/assets/fonts/NotesFont.ttf') format('truetype');
+  src: url('/public/assets/fonts/NotesFont.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
