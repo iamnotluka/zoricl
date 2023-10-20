@@ -11,7 +11,7 @@ const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage}) => {
   return (
     <div>
       <Header previousPage={backPage}/>
-      <DateSignature date="18 October 2023 at 10:15am"/>
+      <DateSignature date="19 October 2023 at 11:23am"/>
       <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
     </div>
   )
