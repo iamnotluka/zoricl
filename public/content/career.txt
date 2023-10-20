@@ -22,7 +22,7 @@ Stats:
 **Amazon (SDE 1-2)**
 * Tech stack: Java, JavaScript, TypeScript, AWS
 * Working in pickup grocery tech - as close to customer as possible
-* Working in complliance - as far away as customer as possible
+* Working in complliance - as far away to customer as possible
 * Managing and maintaining team processes (retro, stand up, oncall...)
 * Independently launching front end of the grocery pickup app in JP
 * Mentoring new starters and interns
