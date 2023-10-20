@@ -37,6 +37,7 @@ Stats:
   * Delegated work to 3 engineers
 
 Continue reading if you're interested. This sums up how I arrived at where I am today.
+
 #### **Late 2019: Moving to Brisbane. Internship at AECOM.**
 * Have no clue what I'm doing. Working on Angular in a small team. Working on decent size components. Mostly fixing bugs and asking Peter the russian genious to fix my CSS.
 * Studing AI and Data Science, playing semi-pro footy.
