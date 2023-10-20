@@ -34,6 +34,7 @@ body, div, p, h4 {
 
 html {
   background: var(--background-color);
+  padding-bottom: 5rem;
 }
 body {
   -webkit-font-smoothing: antialiased;
@@ -117,6 +118,12 @@ ul {
   transition: 0.2s;
 }
 
+.my-textarea {
+  position: absolute;
+  left: -9999px;
+  font-size: 16px;
+}
+
 h3 {
   margin-top: 1rem;
 }
@@ -165,7 +172,8 @@ ul {
 }
 
 .header a {
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none !important;
 }
 
