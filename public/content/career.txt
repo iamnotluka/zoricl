@@ -11,13 +11,13 @@ Stats:
   * Majoring in AI and Data Science
 
 **VirtualMgr (Junior Javascript Developer)**
-* KPL Management: [https://www.kpltalents.com/](https://www.kpltalents.com/)
+* Implementing small things here and there - mostly in JavaScript
+* Working on automating data visualisation for clients
+* Project highlight: KPL Management: [https://www.kpltalents.com/](https://www.kpltalents.com/)
   * Interviewed stakeholder to obtain requirements
   * Came up with a proposal, UI/UX design & tech design
   * Independently implemented and deployed project to production
   * Platform still in use
-* Implementing small things here and there - mostly in JavaScript
-* Working on automating data visualisation for clients
 
 **Amazon (SDE 1-2)**
 * Tech stack: Java, JavaScript, TypeScript, AWS
