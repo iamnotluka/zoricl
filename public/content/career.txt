@@ -4,10 +4,11 @@ Stats:
 * Years alive: 25
 * Layoffs survived: 1
 * Strict muscle-up record: 11
-* Full time jobs: 2
-* Businesses failed: 2
 
-#### Highlights
+**University**
+* Griffith Uni
+* Computer Science
+  * Majoring in AI and Data Science
 
 **VirtualMgr (Junior Javascript Developer)**
 * KPL Management: [https://www.kpltalents.com/](https://www.kpltalents.com/)
