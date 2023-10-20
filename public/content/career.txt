@@ -45,9 +45,11 @@ Continue reading if you're interested. This sums up how I arrived at where I am 
 #### **March 2020: Plague**
 
 * Covid happened. Lockdowns. Lots of free time. Personal projects, learning how to trade, do marketing and sell stuff online.
-* Pirated Shopify dropshipping course. Built a website. Found a supplier. Messaged influencers. Sold 12 massage guns. Realised that I find reversing binary trees and solving medium Leetcode questions in Haskell is more fun.
-* Graduated uni in November 2020 - put "I never let school interfere with my education" in my LinkedIn bio to justify my garbage GPA.
-* Realised I'll have no real income after I graduate. Worked for free 2 days a week to learn and show company I can actually get shit done.
+* Got a hold of a dropshipping course. Built a website. Found a supplier. Messaged influencers. Sold 12 massage guns. Realised that I find reversing binary trees and solving medium Leetcode questions in Haskell a lot more fun.
+* Graduated uni in November 2020.
+* Put "I never let school interfere with my education" in my LinkedIn bio to justify my garbage GPA.
+* Reality hit. Realised I'll have no real income after I graduate. 
+* Worked for free 2 days a week to learn and show company I can actually get shit done.
 
 #### **August 2020: First Real Job.**
 
@@ -57,25 +59,28 @@ Continue reading if you're interested. This sums up how I arrived at where I am 
 #### **December 2020: Impulsive Financial Decisions**
 
 * Bought a house and realised that my income wont be enough to survive. Started looking for a better paying job.
-* Doing HackerRank, Leetcode and pramp.com 24/7. Reversing binary trees and implementing hash maps in my sleep. Hoping noone asks me what quick sort is.
+* Doing HackerRank, Leetcode and pramp.com 24/7. Reversing binary trees and implementing hash maps in my sleep. Hoping noone asks me what quick-sort is.
 
 
 #### **March 2021: FAANG**
 
-* Did every leet code question I could and got hired as an SDE 1 at Amazon. Working in F3 (Groceries). Building cool pickup tech. Have no clue what a deployment pipeline is. Getting bullied by L5s and L6s.
-* Sufered injury during my soccer game. Was pretty sad. Started treating software like it's my full time gig that it is.
-* For about 12 months I was trying to survive.
-* Moved to work in Compliance after 16 months. Still getting bullied by L5s and L6s.
+* Did every leet code question I could and got hired as an SDE 1 at Amazon. 
+* Working in F3 (Groceries). Building cool pickup tech. Have no clue what a deployment pipeline is. Getting bullied by L5s and L6s.
+* Sufered injury during my soccer game. Started treating software like it's my full time gig that it is.
+* Spent about 8 months trying to adapt.
+* Moved teams to work in Compliance after 14 months. Still getting bullied by L5s and L6s.
 
 #### **January 2023: Surviving Layoffs & Facebook Ads**
 
-* Still working at Amazon. Yet, a little bored.
-* Found out about this marketing stuff. Started learning about Facebook ads.
-* Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. Again realised that reversing binary trees is where my head is at.
+* Layoffs happen. Somehow I'm still working for Amazon.
+* Found out about this marketing stuff. Started learning about Facebook ads and algorithms behind it.
+* Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. 
+* Again realised that reversing binary trees is where my head is at.
 
 #### **Current: FANG**
 
 * Worked hard to get good at software, became and SDE 2 (L5).
 * Still at Amazon. Bullying L4s. Getting bullied by L6s.
+* Enjoying good people, challenging problems, and coffee with Jarrod.
 
 Send me an email: [contact@zoricl.io](mailto:contact@zoricl.io)
