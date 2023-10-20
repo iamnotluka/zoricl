@@ -7,7 +7,7 @@ interface HappinessAlgorithmProps {
     backPage: string;
 }
 
-export const HappinessAlgorithm: React.FC<HappinessAlgorithmProps> = ({backPage}) => {
+const HappinessAlgorithm: React.FC<HappinessAlgorithmProps> = ({backPage}) => {
     return (
     <div>
         <Header previousPage={backPage}/>
@@ -16,3 +16,5 @@ export const HappinessAlgorithm: React.FC<HappinessAlgorithmProps> = ({backPage}
     </div>
   )
 }
+
+export default HappinessAlgorithm;

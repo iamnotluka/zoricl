@@ -2,12 +2,13 @@ import React from 'react'
 import { MarkdownSection } from '../MarkdownSection'
 import DateSignature from '../DateSignature'
 import { Header } from '../Header'
+import { Link } from 'react-router-dom';
 
 interface CareerProps {
     backPage: string;
 }
 
-export const Career: React.FC<CareerProps> = ({backPage}) => {
+const Career: React.FC<CareerProps> = ({backPage}) => {
     return (
     <div>
         <Header previousPage={backPage}/>
@@ -16,3 +17,5 @@ export const Career: React.FC<CareerProps> = ({backPage}) => {
     </div>
   )
 }
+
+export default Career;

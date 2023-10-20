@@ -34,8 +34,8 @@ body, div, p, h4 {
 
 html {
   background: var(--background-color);
-  padding-bottom: 5rem;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--sans);

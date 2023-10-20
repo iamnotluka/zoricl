@@ -10,13 +10,12 @@ export default function Home() {
       <Header previousPage='none'/>
       <DateSignature date='18 October 2023 at 8:36pm'/>
     <MarkdownSection markdownFileName='introduction.txt'/>
-    <h4>Career</h4>
-    <p>I've done a couple of things in my life. Read my <Link to="/career">career summary here</Link>.</p>
-    <h4>Happiness Algorithm</h4>
-    <p>A neat framework and resources that work for me. Check it out <Link to="/happiness-algorithm">here.</Link></p>
+    <p>If you're a recruiter or just interested what I did in past couple of years - read my <Link to="/career">career summary</Link>.</p>
+    <h4>Projects</h4>
+    <p>You might also find <Link to="/projects">projects I've worked on</Link> interesting.</p>
     <h4>Knowledge Base</h4>
     <p>Knowledge kept is potential unrealized. - ChatGPT</p>
-    <p>Look at my knowledge base <Link to="/knowledge-base">here.</Link></p>
+    <p>Look at my <Link to="/knowledge-base">knowledge base.</Link></p>
   </div>
   )
 }
