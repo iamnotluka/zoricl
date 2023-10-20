@@ -2,11 +2,36 @@
 
 Stats:
 * Years alive: 25
-* Years coding: 5 (2.5 seriously)
 * Layoffs survived: 1
 * Strict muscle-up record: 11
 * Full time jobs: 2
 * Businesses failed: 2
+
+#### Highlights
+
+**VirtualMgr (Junior Javascript Developer)**
+* KPL Management: [https://www.kpltalents.com/](https://www.kpltalents.com/)
+  * Interviewed stakeholder to obtain requirements
+  * Came up with a proposal, UI/UX design & tech design
+  * Independently implemented and deployed project to production
+  * Platform still in use
+* Implementing small things here and there - mostly in JavaScript
+* Working on automating data visualisation for clients
+
+**Amazon (SDE 1-2)**
+* Tech stack: Java, JavaScript, TypeScript, AWS
+* Working in pickup grocery tech - as close to customer as possible
+* Working in complliance - as far away as customer as possible
+* Managing and maintaining team processes (retro, stand up, oncall...)
+* Independently launching front end of the grocery pickup app in JP
+* Mentoring new starters and interns
+* Project highlight (compliance): tech lead for a cross team project in a completely new space
+  * 5 teams involved
+  * Coming up with a high level solution on services owned by other teams
+  * Coming up with a low level design solution based on the agreed on high level design
+  * Delegating work to 3 engineers
+
+-----
 
 #### **Late 2019: Moving to Brisbane. Internship at AECOM.**
 * Have no clue what I'm doing. Working on Angular in a small team. Working on decent size components. Mostly fixing bugs and asking Peter the russian genious to fix my CSS.
