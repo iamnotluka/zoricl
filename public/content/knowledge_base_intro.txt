@@ -1,7 +1,11 @@
 #### Knowledge Base
 
-A search box will go here.
+When I was very young, when asked what superpower I would like to have, I'd always answer with "I'd like to know everything."
 
-List of resources that I find useful.
+So, here is my everything.
 
-*Coming soon...*
+Click around, see what you like. You might find something useful.
+
+* [Useful resources]()
+* [Software Engineering]()
+* [Marketing]()
