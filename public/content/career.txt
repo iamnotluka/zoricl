@@ -11,8 +11,8 @@ Stats:
 
 **University**
 * Griffith Uni
-* Computer Science
-  * Majoring in AI and Data Science
+* Studying Computer Science
+* Majoring in AI and Data Science
 
 **VirtualMgr (Junior Javascript Developer)**
 * Implemented various tasks - mostly in JavaScript
@@ -72,7 +72,7 @@ Continue reading if you're interested. This sums up how I arrived at where I am 
 
 #### **January 2023: Surviving Layoffs & Facebook Ads**
 
-* Layoffs happen. Somehow I'm still working for Amazon.
+* Layoffs happen. I'm still here.
 * Found out about this marketing stuff. Started learning about Facebook ads and algorithms behind it.
 * Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. 
 * Again realised that reversing binary trees is where my head is at.
@@ -81,6 +81,6 @@ Continue reading if you're interested. This sums up how I arrived at where I am 
 
 * Worked hard to get good at software, became and SDE 2 (L5).
 * Still at Amazon. Bullying L4s. Getting bullied by L6s.
-* Enjoying good people, challenging problems, and coffee with Jarrod.
+* Enjoying good people, challenging problems, and morning coffee with Jarrod.
 
 Send me an email: [contact@zoricl.io](mailto:contact@zoricl.io)
