@@ -37,44 +37,44 @@ Stats:
   * Delegated work to 3 engineers
 
 Continue reading if you're interested. This sums up how I arrived at where I am today.
-
 #### **Late 2019: Moving to Brisbane. Internship at AECOM.**
-* Was unsure of my role. Worked on Angular in a small team. Focused on sizable components. Primarily fixed bugs and asked Peter, the Russian genius, to correct my CSS.
-* Studied AI and Data Science, played semi-pro footy.
+* Have no clue what I'm doing. Working on Angular in a small team. Working on decent size components. Mostly fixing bugs and asking Peter the russian genious to fix my CSS.
+* Studing AI and Data Science, playing semi-pro footy.
 
 #### **March 2020: Plague**
 
-* The Covid pandemic struck. Lockdowns ensued. Had ample free time. Engaged in personal projects, learned trading, marketing, and online selling.
-* Accessed a Shopify dropshipping course. Built a website, found a supplier, reached out to influencers. Sold 12 massage guns. Realized that I enjoyed reversing binary trees and solving medium Leetcode questions in Haskell more.
-* Graduated from uni in November 2020 - added "I never let school interfere with my education" to my LinkedIn bio to explain my less-than-stellar GPA.
-* Recognized the need for a steady income post-graduation. Volunteered for free two days a week to learn and demonstrate my capabilities to potential employers.
+* Covid happened. Lockdowns. Lots of free time. Personal projects, learning how to trade, do marketing and sell stuff online.
+* Pirated Shopify dropshipping course. Built a website. Found a supplier. Messaged influencers. Sold 12 massage guns. Realised that I find reversing binary trees and solving medium Leetcode questions in Haskell is more fun.
+* Graduated uni in November 2020 - put "I never let school interfere with my education" in my LinkedIn bio to justify my garbage GPA.
+* Realised I'll have no real income after I graduate. Worked for free 2 days a week to learn and show company I can actually get shit done.
 
 #### **August 2020: First Real Job.**
 
-* My efforts paid off with a job offer. Grateful they recognized my dedication. Thanks, team!
-* Became a Junior Developer with [VirtualMgr](https://virtualmgr.com/).
+* Free value = job. Glad they saw I tried my best. Thanks guys!
+* Junior Developer with [VirtualMgr](https://virtualmgr.com/).
 
 #### **December 2020: Impulsive Financial Decisions**
 
-* Purchased a house and realized my income wouldn't suffice. Began the search for a higher-paying job.
-* Engaged in HackerRank, Leetcode, and pramp.com round the clock. Dreamt of reversing binary trees and implementing hash maps. Hoped no one would quiz me on quick sort.
+* Bought a house and realised that my income wont be enough to survive. Started looking for a better paying job.
+* Doing HackerRank, Leetcode and pramp.com 24/7. Reversing binary trees and implementing hash maps in my sleep. Hoping noone asks me what quick sort is.
+
 
 #### **March 2021: FAANG**
 
-* Completed every Leetcode challenge possible and secured a position as an SDE 1 at Amazon. Worked in F3 (Groceries). Developed innovative pickup tech. Was unfamiliar with deployment pipelines. Faced challenges from L5s and L6s.
-* Suffered an injury during a soccer match. Felt disheartened. Began treating software development with the seriousness it deserved.
-* Spent about 12 months trying to adapt.
-* Transitioned to the Compliance department after 16 months. Continued facing challenges from L5s and L6s.
+* Did every leet code question I could and got hired as an SDE 1 at Amazon. Working in F3 (Groceries). Building cool pickup tech. Have no clue what a deployment pipeline is. Getting bullied by L5s and L6s.
+* Sufered injury during my soccer game. Was pretty sad. Started treating software like it's my full time gig that it is.
+* For about 12 months I was trying to survive.
+* Moved to work in Compliance after 16 months. Still getting bullied by L5s and L6s.
 
-#### **January 2023: Surviving Layoffs & Exploring Facebook Ads**
+#### **January 2023: Surviving Layoffs & Facebook Ads**
 
-* Continued my tenure at Amazon but felt a tad restless.
-* Discovered the world of marketing. Delved into learning about Facebook ads.
-* Achieved 5 figures in monthly revenue (for one month - but it counts). While it was lucrative, I didn't enjoy it. Realized my passion still lay in tasks like reversing binary trees.
+* Still working at Amazon. Yet, a little bored.
+* Found out about this marketing stuff. Started learning about Facebook ads.
+* Scaled to 5 figures per month (for one month - still counts). Super easy, good money, hate doing it. Again realised that reversing binary trees is where my head is at.
 
 #### **Current: FANG**
 
-* Worked diligently to hone my software skills and progressed to SDE 2 (L5).
-* Remain at Amazon. Now guiding L4s while still learning from L6s.
+* Worked hard to get good at software, became and SDE 2 (L5).
+* Still at Amazon. Bullying L4s. Getting bullied by L6s.
 
 Send me an email: [contact@zoricl.io](mailto:contact@zoricl.io)
