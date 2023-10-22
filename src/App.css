@@ -232,6 +232,5 @@ ul {
   display: flex;
     justify-content: center; /* Horizontally center */
     align-items: flex-start; /* Align to the top */
-    width: 100vw;            /* Assuming you want the outer div to take the entire viewport width */
     position: relative; 
 }
