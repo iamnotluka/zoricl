@@ -59,6 +59,7 @@ export const Header: React.FC<HeaderProps> = ({previousPage}) => {
       };
 
     return (
+      <div className="upper-header">
         <div className="header">
             {previousPage != 'none' && <Link to={previousPage}><p><i className='fa fa-angle-left fa-2x'></i> Back</p></Link>}
             {previousPage == 'none' && <div className='disabled-back'><p><i className='fa fa-angle-left fa-2x'></i> Back</p></div>}
@@ -71,5 +72,6 @@ export const Header: React.FC<HeaderProps> = ({previousPage}) => {
             aria-label='Dark mode toggle'/> */}
             <textarea className="my-textarea"></textarea>
         </div>
+      </div>
     )
 }
