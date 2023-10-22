@@ -1,7 +1,3 @@
 #### 📖 Knowledge Base
 
 Click around, see what you like. You might find something useful.
-
-* [Useful resources]()
-* [Software Engineering]()
-* [Marketing]()

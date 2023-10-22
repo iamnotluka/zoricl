@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
 
 interface MarkdownSectionProps {
-  markdownFileName: string;
+  markdownFileName?: string;
 }
 
 const loadFile = async (markdownFileName: string) => {
@@ -10,13 +10,9 @@ const loadFile = async (markdownFileName: string) => {
   
   try {
     const response = await fetch(filePath);
-
-    console.log(response);
     if (!response.ok) {
       throw new Error('Error trying to fetch a file.');
     }
-
-    console.log(await response);
     const data = await response.text();
     return data;
   } catch (error) {
@@ -26,21 +22,27 @@ const loadFile = async (markdownFileName: string) => {
 };
 
 export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileName }) => {
-  
-  const [fileMarkdownData, setFileMarkdownData] = useState<string | null>(null);
+
+  const [fileMarkdownData, setFileMarkdownData] = useState<string | null>(
+    markdownFileName ? null : "### Nothing to find here."
+  );
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await loadFile(markdownFileName);
-        setFileMarkdownData(data);
-      } catch (error) {
-        // Handle the error, e.g., show an error message to the user
-        console.error('Error fetching and setting file data:', error);
-      }
-    };
+    if (markdownFileName) {
+      const fetchData = async () => {
+        try {
+          const data = await loadFile(markdownFileName);
+          setFileMarkdownData(data);
+        } catch (error) {
+          // Handle the error, e.g., show an error message to the user
+          console.error('Error fetching and setting file data:', error);
+        }
+      };
 
-    fetchData();
+      fetchData();
+    } else {
+      setFileMarkdownData("### Nothing to find here.");
+    }
   }, [markdownFileName]);
 
   return (
@@ -48,7 +50,6 @@ export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileNa
       {fileMarkdownData !== null ? (
         <Markdown>{fileMarkdownData}</Markdown>
       ) : (
-        // You can render a loading message or component while fetching the data
         <p>Loading...</p>
       )}
     </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MarkdownSection } from '../../../MarkdownSection';
 
 type TreeNode = {
     [key: string]: TreeNode | string;
@@ -56,8 +57,8 @@ type TreeNode = {
           />
         ))}
         <div>
-            <h3>Current Path:</h3>
-            {currentPath.endsWith('.txt') ? "HELOOOOOO WE DID IT!" : currentPath}
+            {currentPath.split('/').pop() + '\n'}
+            {currentPath.endsWith('.txt') ? <MarkdownSection markdownFileName={currentPath.split('/').pop()}/> : currentPath}
         </div>
       </div>
     );

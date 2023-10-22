@@ -9,7 +9,7 @@ interface KnowledgeBaseProps {
 }
 
 const data: any = {
-  "Projects": {
+  "Technical Challenges": {
     "Project one": {},
     "Project two": {}
   },
@@ -20,7 +20,7 @@ const data: any = {
     "Topic two": {}
   },
   "Books and Resources": {
-    "books_and_resources.txt": {}
+    "resource": "books_and_resources.txt"
   }
 };
 
@@ -30,7 +30,7 @@ const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage}) => {
       <Header previousPage={backPage}/>
       <DateSignature date="19 October 2023 at 11:23am"/>
       <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
-      <KnowledgeBaseSarchTree data={data}/>
+      {/* <KnowledgeBaseSarchTree data={data}/> */}
     </div>
   )
 }

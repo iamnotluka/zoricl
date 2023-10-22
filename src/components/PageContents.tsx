@@ -2,7 +2,7 @@ import Career from './pages/Career';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import HappinessAlgorithm from './pages/HappinessAlgorithm';
-import KnowledgeBase from './pages/KnowledgeBase';
+import KnowledgeBase from './pages/home/knowledge_base/KnowledgeBase';
 
 export const PageContents = () => {
   const currentRoute = "/";
