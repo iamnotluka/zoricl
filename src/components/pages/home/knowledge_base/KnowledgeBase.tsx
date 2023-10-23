@@ -16,19 +16,25 @@ const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage}) => {
       <Header previousPage={backPage}/>
       <DateSignature date="19 October 2023 at 11:23am"/>
       <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
-      <h4>Software</h4>
+      <h5>Software</h5>
         <ul>
           <li>
             <p><Link to='test-topic'>Data Structures & Algorithms</Link></p>
           </li>
         </ul>
-      <h4>Random</h4>
+      <h5>Random</h5>
         <ul>
           <li>
             <p><Link to='test-topic'>How to do propery investment in Australia.</Link></p>
           </li>
         </ul>
-      <h4>Books & Resources</h4>
+      <h5>Side Hustles</h5>
+        <ul>
+          <li>
+            <p><Link to='test-topic'>How to do propery investment in Australia.</Link></p>
+          </li>
+        </ul>
+      <h5>Books & Resources</h5>
       <p>
         <Link to="test-topic">Test topic 1</Link>
       </p>

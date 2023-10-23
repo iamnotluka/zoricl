@@ -234,3 +234,8 @@ ul {
     align-items: flex-start; /* Align to the top */
     position: relative; 
 }
+
+h5 {
+  font-size: 18px;
+  margin-bottom: -0.5rem;
+}
