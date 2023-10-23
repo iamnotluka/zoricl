@@ -61,15 +61,15 @@ export const Header: React.FC<HeaderProps> = ({previousPage}) => {
     return (
       <div className="upper-header">
         <div className="header">
-            {previousPage != 'none' && <Link to={previousPage}><p><i className='fa fa-angle-left fa-2x'></i> Back</p></Link>}
+            {(previousPage != 'none') && <Link to={previousPage}><p><i className='fa fa-angle-left fa-2x'></i> Back</p></Link>}
             {previousPage == 'none' && <div className='disabled-back'><p><i className='fa fa-angle-left fa-2x'></i> Back</p></div>}
-            {<a href='#' onClick={handleShareClick}><strong>{!copied ? 'Copy URL' : 'Copied!'}</strong> <i className='fa fa-share'></i></a>}
-            {/* <Toggle
+            <Toggle
             checked={darkMode}
             onChange={handleToggle}
             icons={false}
             // icons={{ checked: darkIcon, unchecked: lightIcon }}
-            aria-label='Dark mode toggle'/> */}
+            aria-label='Dark mode toggle'/>
+            {/* {<a href='#' onClick={handleShareClick}><strong>{!copied ? 'Copy URL' : 'Copied!'}</strong> <i className='fa fa-share'></i></a>} */}
             <textarea className="my-textarea"></textarea>
         </div>
       </div>
