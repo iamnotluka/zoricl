@@ -18,13 +18,13 @@ const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage}) => {
       <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
         <ul>
           <li>
-            <p><Link to='test-topic'>Software</Link></p>
+            <p><Link to='test-topic'>💻 Software</Link></p>
           </li>
           <li>
-            <p><Link to='test-topic'>Business</Link></p>
+            <p><Link to='test-topic'>💰 Business</Link></p>
           </li>
         <li>
-      <Link to="books-and-resources">Books & Resources</Link>
+      <Link to="books-and-resources">📚 Books & Resources</Link>
       </li>
       </ul>
       <p>
