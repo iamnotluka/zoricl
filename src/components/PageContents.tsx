@@ -16,6 +16,11 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
     link: '/test-topic',
     markdownFileName: 'test_topic.txt',
     date: '23 October 2023 at 9:35PM'
+  },
+  {
+    link: '/books-and-resources',
+    markdownFileName: 'books_and_resources.txt',
+    date: '25 October 2023 at 11:30PM'
   }
 ];
 

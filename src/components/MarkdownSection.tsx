@@ -32,6 +32,7 @@ export const MarkdownSection: React.FC<MarkdownSectionProps> = ({ markdownFileNa
       const fetchData = async () => {
         try {
           const data = await loadFile(markdownFileName);
+          console.log(data);
           setFileMarkdownData(data);
         } catch (error) {
           // Handle the error, e.g., show an error message to the user
