@@ -13,7 +13,12 @@ export interface KnowledgeBaseRoute {
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
   {
-    title: '📚 Books and Resources',
+    title: 'Placibo effect of positive thinking',
+    name: 'why_be_positive',
+    date: '15 November 2023 at 7:20PM'
+  },
+  {
+    title: 'Books and Resources',
     name: 'books_and_resources',
     date: '25 October 2023 at 11:30PM'
   }
