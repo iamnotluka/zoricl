@@ -20,8 +20,8 @@ body, div, p, h4 {
   --sans: "NotesFont", "SF Pro Icons","Helvetica Neue","Helvetica","Arial", "sans-serif";
   --h2-font-size: 50px;
   --h3-font-size: 35px;
-  --h4-font-size: 30px;
-  --p-font-size: 17px;
+  --h4-font-size: 25px;
+  --p-font-size: 15px;
 }
 
 [data-theme="light"] {
@@ -86,8 +86,9 @@ h3 {
   font-size: var(--h3-font-size)
 }
 h4 {
+  margin-block-start: 2.5rem;
   font-size: var(--h4-font-size);
-  margin-bottom: -2px;
+  margin-bottom: -5px;
 }
 p {
   font-size: var(--p-font-size);
@@ -138,8 +139,8 @@ img {
 }
 
 .page-contents {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .date-signature {
