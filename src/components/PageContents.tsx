@@ -5,21 +5,16 @@ import HappinessAlgorithm from './pages/HappinessAlgorithm';
 import KnowledgeBase from './pages/home/knowledge_base/KnowledgeBase';
 import KnowledgeBaseResource from './pages/home/knowledge_base/KnowledgeBaseResource';
 
-interface KnowledgeBaseRoute {
-  link: string,
-  markdownFileName: string,
+export interface KnowledgeBaseRoute {
+  title: string,
+  name: string,
   date: string,
 }
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
   {
-    link: '/test-topic',
-    markdownFileName: 'test_topic.txt',
-    date: '23 October 2023 at 9:35PM'
-  },
-  {
-    link: '/books-and-resources',
-    markdownFileName: 'books_and_resources.txt',
+    title: '📚 Books and Resources',
+    name: 'books_and_resources',
     date: '25 October 2023 at 11:30PM'
   }
 ];
@@ -34,16 +29,16 @@ export const PageContents = () => {
         <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/career" element={<Career backPage={currentRoute}/>} />
-              <Route path={KNOWLEDGE_BASE_PATH} element={<KnowledgeBase backPage={currentRoute}/>} />
+              <Route path={KNOWLEDGE_BASE_PATH} element={<KnowledgeBase backPage={currentRoute} knowledgeBaseRoutes={knowledgeBaseRoutes}/>} />
 
               {knowledgeBaseRoutes.map((knowledgeBaseRoute) => (
                 <Route 
-                  key={knowledgeBaseRoute.link} // Added a key prop for React's list rendering
-                  path={`${KNOWLEDGE_BASE_PATH}${knowledgeBaseRoute.link}`} 
+                  key={knowledgeBaseRoute.name}
+                  path={`${KNOWLEDGE_BASE_PATH}/${knowledgeBaseRoute.name}`} 
                   element={
                     <KnowledgeBaseResource 
                       backPage={KNOWLEDGE_BASE_PATH}
-                      markdownFileName={knowledgeBaseRoute.markdownFileName}
+                      markdownFileName={`${knowledgeBaseRoute.name}.txt`}
                       date={knowledgeBaseRoute.date}
                     />
                   }

@@ -2,30 +2,26 @@ import React from 'react'
 import { Header } from '../../../Header';
 import { MarkdownSection } from '../../../MarkdownSection';
 import DateSignature from '../../../DateSignature';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import KnowledgeBaseResource from './KnowledgeBaseResource';
 import { Link } from 'react-router-dom';
+import { KnowledgeBaseRoute } from '../../../PageContents';
 
 interface KnowledgeBaseProps {
     backPage: string;
+    knowledgeBaseRoutes: KnowledgeBaseRoute[]
 }
 
-const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage}) => {
+const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage, knowledgeBaseRoutes}) => {
   return (
     <div>
       <Header previousPage={backPage}/>
       <DateSignature date="19 October 2023 at 11:23am"/>
       <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
-        <ul>
+      <ul>
+        {knowledgeBaseRoutes.map((knowledgeBaseRoute) => (   
           <li>
-            <p><Link to='test-topic'>💻 Software</Link></p>
+            <p><Link to={knowledgeBaseRoute.name}>{knowledgeBaseRoute.title}</Link></p>
           </li>
-          <li>
-            <p><Link to='test-topic'>💰 Business</Link></p>
-          </li>
-        <li>
-      <Link to="books-and-resources">📚 Books & Resources</Link>
-      </li>
+        ))}
       </ul>
       <p>
       </p>
