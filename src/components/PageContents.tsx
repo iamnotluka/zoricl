@@ -21,6 +21,11 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
     title: '📚 Books And Resources',
     name: 'books_and_resources',
     date: '25 October 2023 at 11:30PM'
+  },
+  {
+    title: '🌱 Happiness Algorithm',
+    name: 'happiness_algorithm',
+    date: '18 October 2023 at 9:46PM'
   }
 ];
 
