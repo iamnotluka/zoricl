@@ -20,6 +20,9 @@ const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage, knowledgeBaseRou
         {knowledgeBaseRoutes.map((knowledgeBaseRoute) => (   
           <li>
             <p><Link to={knowledgeBaseRoute.name}>{knowledgeBaseRoute.title}</Link></p>
+            <ul className='subsection-date-ul'>
+              <li className='subsection-date-li'>{knowledgeBaseRoute.date}</li>
+            </ul>
           </li>
         ))}
       </ul>
