@@ -253,3 +253,16 @@ h5 {
   font-size: 13.5px;
   list-style-type: none;
 }
+
+.sm-note {
+  color: var(--date-colour);
+  font-size: 13.5px;
+  list-style-type: none;
+}
+
+h2 {
+  color: var(--date-colour);
+  font-size: 13.5px;
+  list-style-type: none;
+  font-weight: 400;
+}
