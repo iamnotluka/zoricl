@@ -14,10 +14,8 @@ export default function Home() {
     <p className='subsection-date-li'>
       The views and opinions expressed on this website are solely my own and do not reflect those of any of my current or previous employers. All content and opinions are provided for informational purposes only and are not intended to represent the stance of any company or organization I am affiliated with.
     </p>
-
     <hr></hr>
-
-    <h4>🚀 Current Side Project</h4>
+    <h4>🚀 Building a Side Project</h4>
     <p>While working, I am always working on a side project. I try documenting my journey with the hope to end the series with "Lessons learned" and implement those in my next project.</p>
     <p>Check it out <Link to="/building-start-up">here.</Link></p>
     <h4>💡 Knowledge Base</h4>
