@@ -1,9 +1,11 @@
 import Career from './pages/Career';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
-import HappinessAlgorithm from './pages/HappinessAlgorithm';
 import KnowledgeBase from './pages/home/knowledge_base/KnowledgeBase';
 import KnowledgeBaseResource from './pages/home/knowledge_base/KnowledgeBaseResource';
+
+const KNOWLEDGE_BASE_PATH = "/knowledge-base";
+const BUILDING_START_UP_PATH = "/building-start-up";
 
 export interface KnowledgeBaseRoute {
   title: string,
@@ -29,9 +31,17 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
   }
 ];
 
+const buildingStartUpRoutes: KnowledgeBaseRoute[] = [
+  {
+    title: 'Day 1',
+    name: 'building_kart_1',
+    date: '26 December 2023 at 3:30PM'
+  }
+];
+
 export const PageContents = () => {
-  const KNOWLEDGE_BASE_PATH = "/knowledge-base";
   const currentRoute = "/";
+
 
   return (
     <div className='page-contents'>
@@ -39,23 +49,41 @@ export const PageContents = () => {
         <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/career" element={<Career backPage={currentRoute}/>} />
-              <Route path={KNOWLEDGE_BASE_PATH} element={<KnowledgeBase backPage={currentRoute} knowledgeBaseRoutes={knowledgeBaseRoutes}/>} />
 
-              {knowledgeBaseRoutes.map((knowledgeBaseRoute) => (
-                <Route 
-                  key={knowledgeBaseRoute.name}
-                  path={`${KNOWLEDGE_BASE_PATH}/${knowledgeBaseRoute.name}`} 
-                  element={
-                    <KnowledgeBaseResource 
-                      backPage={KNOWLEDGE_BASE_PATH}
-                      markdownFileName={`${knowledgeBaseRoute.name}.txt`}
-                      date={knowledgeBaseRoute.date}
-                    />
-                  }
-                />
-              ))}
+              <Route 
+                path={KNOWLEDGE_BASE_PATH} 
+                element={<KnowledgeBase 
+                  backPage={currentRoute} 
+                  knowledgeBaseRoutes={knowledgeBaseRoutes} 
+                  intro='knowledge_base_intro.txt' 
+                  date='19 October 2023 at 11:23pm'/>} />
+              <Route 
+                path={BUILDING_START_UP_PATH} 
+                element={<KnowledgeBase 
+                  backPage={currentRoute} 
+                  knowledgeBaseRoutes={buildingStartUpRoutes} 
+                  intro='building_kart.txt' 
+                  date='26 December 2023 at 3:32pm'/>} />
+              {buildRoutesForKnowledgeBaseRoutes(BUILDING_START_UP_PATH, buildingStartUpRoutes)}
+              {buildRoutesForKnowledgeBaseRoutes(KNOWLEDGE_BASE_PATH, knowledgeBaseRoutes)}
           </Routes>
       </Router>
     </div>
   )
 }
+
+const buildRoutesForKnowledgeBaseRoutes = (basePath: string, knowledgeBaseRoutes: KnowledgeBaseRoute[]) => {
+  return knowledgeBaseRoutes.map((knowledgeBaseRoute) => (
+    <Route 
+      key={knowledgeBaseRoute.name}
+      path={`${basePath}/${knowledgeBaseRoute.name}`} 
+      element={
+        <KnowledgeBaseResource 
+          backPage={basePath}
+          markdownFileName={`${knowledgeBaseRoute.name}.txt`}
+          date={knowledgeBaseRoute.date}
+        />
+      }
+    />
+  ));
+};

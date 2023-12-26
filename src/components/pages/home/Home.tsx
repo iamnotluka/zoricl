@@ -14,7 +14,9 @@ export default function Home() {
     <h4>Knowledge Base</h4>
     <p>"<i>Knowledge kept is potential unrealized."</i> - ChatGPT</p>
     <p>Look at my <Link to="/knowledge-base">knowledge base.</Link> 📖</p>
-
+    <h4>💡 Current Side Project</h4>
+    <p>While working, I am always working on a side project. I try documenting my journey with the hope to end the series with "Lessons learned" and implement those in my next project.</p>
+    <p>Check it out <Link to="/building-start-up">here.</Link></p>
   </div>
   )
 }

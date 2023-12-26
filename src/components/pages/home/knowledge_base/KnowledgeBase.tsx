@@ -7,15 +7,17 @@ import { KnowledgeBaseRoute } from '../../../PageContents';
 
 interface KnowledgeBaseProps {
     backPage: string;
-    knowledgeBaseRoutes: KnowledgeBaseRoute[]
+    knowledgeBaseRoutes: KnowledgeBaseRoute[];
+    intro: string;
+    date: string;
 }
 
-const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage, knowledgeBaseRoutes}) => {
+const KnowledgeBase: React.FC<KnowledgeBaseProps> = ({backPage, knowledgeBaseRoutes, intro, date}) => {
   return (
     <div>
       <Header previousPage={backPage}/>
-      <DateSignature date="19 October 2023 at 11:23am"/>
-      <MarkdownSection markdownFileName='knowledge_base_intro.txt'/>
+      <DateSignature date={date}/>
+      <MarkdownSection markdownFileName={intro}/>
       <ul>
         {knowledgeBaseRoutes.map((knowledgeBaseRoute) => (   
           <li>
