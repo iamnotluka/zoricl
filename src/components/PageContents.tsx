@@ -33,7 +33,7 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 
 const buildingStartUpRoutes: KnowledgeBaseRoute[] = [
   {
-    title: 'Day 1',
+    title: 'How To Provide Vaule as a Software Engineer?',
     name: 'building_kart_1',
     date: '26 December 2023 at 3:30PM'
   }
