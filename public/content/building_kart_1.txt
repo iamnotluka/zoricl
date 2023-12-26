@@ -1,6 +1,9 @@
-#### How To Provide Vaule as a Software Engineer?
+#### Providing Value As a Software Engineer
 
 *Note: Document under construction.*
+
+This is strictly an 
+This is written as an oppinion directed to software engineers. If you happen to be someone who is thinking about outsourcing or partnering with the builder, use this as a guide to allow you to not get finesed by anyone.
 
 * Get hired as a full time employee
 * Contract per hour/day/project (outcome)
