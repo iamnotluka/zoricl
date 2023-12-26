@@ -1,4 +1,4 @@
-#### 🚀 Building a Side Project
+#### 💻 Software Resources
 
 The point of sharing this is to have a mind dump/diary of what I am doing in order to end it with a "lessons learned" section.
 

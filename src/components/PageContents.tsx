@@ -5,7 +5,7 @@ import KnowledgeBase from './pages/home/knowledge_base/KnowledgeBase';
 import KnowledgeBaseResource from './pages/home/knowledge_base/KnowledgeBaseResource';
 
 const KNOWLEDGE_BASE_PATH = "/knowledge-base";
-const BUILDING_START_UP_PATH = "/building-start-up";
+const SOFTWARE_RESOURCES_PATH = "/software-resources";
 
 export interface KnowledgeBaseRoute {
   title: string,
@@ -31,7 +31,7 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
   }
 ];
 
-const buildingStartUpRoutes: KnowledgeBaseRoute[] = [
+const softwareResources: KnowledgeBaseRoute[] = [
   {
     title: 'Providing Value As a Software Engineer',
     name: 'building_kart_1',
@@ -58,13 +58,13 @@ export const PageContents = () => {
                   intro='knowledge_base_intro.txt' 
                   date='19 October 2023 at 11:23pm'/>} />
               <Route 
-                path={BUILDING_START_UP_PATH} 
+                path={SOFTWARE_RESOURCES_PATH} 
                 element={<KnowledgeBase 
                   backPage={currentRoute} 
-                  knowledgeBaseRoutes={buildingStartUpRoutes} 
-                  intro='building_kart.txt' 
+                  knowledgeBaseRoutes={softwareResources} 
+                  intro='software_resources.txt' 
                   date='26 December 2023 at 3:32pm'/>} />
-              {buildRoutesForKnowledgeBaseRoutes(BUILDING_START_UP_PATH, buildingStartUpRoutes)}
+              {buildRoutesForKnowledgeBaseRoutes(SOFTWARE_RESOURCES_PATH, softwareResources)}
               {buildRoutesForKnowledgeBaseRoutes(KNOWLEDGE_BASE_PATH, knowledgeBaseRoutes)}
           </Routes>
       </Router>
