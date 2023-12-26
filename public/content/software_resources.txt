@@ -1,9 +1,3 @@
 #### 💻 Software Resources
 
-The point of sharing this is to have a mind dump/diary of what I am doing in order to end it with a "lessons learned" section.
-
-These entries/insights and ideas are process specific such that they are applicable and relatable to any current/future project.
-
-* Current Summary: **Figuring out what to include in an MVP**
-
-Here are the entries:
+Mind dump around building & maintaining software, working on a personal project or building a start-up.
