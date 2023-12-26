@@ -1,7 +1,9 @@
 #### 💡 Current Side Project
 
-The goal of this is to accelerate my growth by forcing me to document my progress on this project.
+The point of sharing this is to have a mind dump/diary of what I am doing in order to end it with a "lessons learned" section.
 
-I noticed that by documenting, I need to explain my thinking which in returns allows me to understand information more deeply. Which is fairly benefitial in my opinion.
+These entries/insights and ideas are process specific such that they are applicable and relatable to any current/future project.
 
-I am currently working on a side project and trying to approach it as if I am building a start up.
+* Current Summary: **Figuring out what to include in an MVP**
+
+Here are the entries:
