@@ -33,15 +33,14 @@ const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 
 const softwareResources: KnowledgeBaseRoute[] = [
   {
-    title: 'Providing Value As a Software Engineer',
-    name: 'building_kart_1',
-    date: '26 December 2023 at 3:30PM'
+    title: 'Guide to answering a coding interview question',
+    name: 'answering_coding_questions',
+    date: '26 December 2023 at 6:56PM',
   }
 ];
 
 export const PageContents = () => {
   const currentRoute = "/";
-
 
   return (
     <div className='page-contents'>
