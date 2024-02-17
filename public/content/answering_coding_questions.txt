@@ -2,14 +2,5 @@
 
 ## Note: Document under construction.
 
-While preparing for my Amazon interview I have:
-
-* Understood and implemented every data structure you can think of.
-* Did every easy & medium leet code question on Leetcode and Hackerrank. I did a couple of hard ones but they were a struggle.
-* Did a couple of competitive programming tournaments (online), didn't do to well but I was able to solve majority of the problems.
-
-I felt like I was ready to start doing practice interviews.
-
-While browsing on the internet I have discovered the [parmp.com](https://www.pramp.com/), mock interview practice platform. Essentially, you get matched with a person and you solve puzzle questions each, interviewing each other and giving each other feedback.
-
-Quickly created a new account and booked every single slot you can think off.
+1. Confirm the input
+2. Confirm the output
