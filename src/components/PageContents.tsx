@@ -15,17 +15,22 @@ export interface KnowledgeBaseRoute {
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 	{
-		title: "💭 Placebo Effect of Positive Thinking",
+		title: "Solving B2B Problems at Scale",
+		name: "solving_b2b_at_scale",
+		date: "20 November 2023 at 9:12PM",
+	},
+	{
+		title: "Placebo Effect of Positive Thinking",
 		name: "why_be_positive",
 		date: "15 November 2023 at 7:20PM",
 	},
 	{
-		title: "📚 Books And Resources",
+		title: "Books And Resources",
 		name: "books_and_resources",
 		date: "25 October 2023 at 11:30PM",
 	},
 	{
-		title: "🌱 Happiness Algorithm",
+		title: "Happiness Algorithm",
 		name: "happiness_algorithm",
 		date: "18 October 2023 at 9:46PM",
 	},

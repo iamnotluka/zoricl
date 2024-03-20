@@ -1,8 +1,16 @@
 #### 🌱 Happniess Algorithm
 
-Neat framework that works from me that I got from book called Almanak of Naval Ravikant. 
+Peace is happiness at rest; happiness is peace in motion. 
 
-Sorted by priority (IMO).
+Someone who's peaceful at rest will end up happy when they do an activity. While a happy person sitting idle will be peaceful. The ultimate goal is not happiness, even though we use that term a lot.
+
+These are words from Naval Ravikant.
+
+I've read a book about him, called Almanak of Naval Ravikant. At the high level, I see it as a blueprint to a good and productive life.
+
+I've summarised it below and sorted by priority (IMO).
+
+I use this to organise my day and prioritise accordingly. I highly recommend grabbing the copy of the book and understanding the concepts behind it.
 
 - Health
   - Excersise
@@ -13,7 +21,7 @@ Sorted by priority (IMO).
       - No alarms, 8-9h of sleep, Circadian rythm
 - Good relationships
   - Friends, Family, Partner
-- Yanis' smile (not included in the book)
+- Yanis' smile (he's a very close friend, he doesn't come with the book)
 - Wealth
   - Income
     - Accountability
