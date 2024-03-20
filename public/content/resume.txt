@@ -1,0 +1,71 @@
+#### Luka Zoric - Resume
+
+##### Profile
+
+Extremely motivated to constantly develop my skills and grow professionally. 
+
+I find meaning in solving complex problems and leading projects to completion.
+
+I am experienced in building scalable, secure and customer centric solutions, as well as hiring and delegating.
+
+##### Interests
+**Coding Languages**: Java, JavaScript, TypeScript, HTML/CSS, C, Haskell...
+
+**Frameworks**: Angular, Bootstrap, TailwindCSS, React, Redux, Node.js, Visual Studio, IntelliJ, Git, Docker, AWS, OpenAI...
+
+**Other**: Computer Vision, Architecture & System Design, AI Chatbots
+
+##### Education
+**Bachelor of Computer Science**
+* Enrolled in Feb. 2018
+* Majoring in AI and Data Science
+* Member of AI Society
+* **Graduated October 2020**
+
+##### Career Summary
+**Software Development Engineer II (L5) at Amazon | Apr. 2023 - Mar. 2024**
+
+In my role within Compliance Tech sector, I focused on developing software solutions aimed at enhancing Amazon's capabilities to deter and prevent malicious activities on the selling platform, ensuring a secure and trustworthy environment for our customers.
+
+Served as tech lead for a cross-team project in a completely new space with 5 teams involved. Firstly, developed a high-level solution for services owned by other teams, created a low-level design solution based on the agreed-upon high-level design, delegated work to 3 engineers and delivered.
+
+**Software Development Engineer I (L4) at Amazon | Mar. 2021 - Mar. 2023**
+
+As a software development engineer in Amazon's grocery sector, I worked on enhancing customer engagement by developing intuitive front-end solutions for the Amazon Fresh pickup app, alongside robust notification systems supporting both delivery and pickup services.
+
+Given each Amazon Fresh and partner store are unique with their own pickup experience, I served as an SME for the tool used by product and store managers to tailor the pickup process to meet the unique needs of individual locations.
+
+**JavaScript Developer at VirtualMgr | Aug. 2020 - Mar. 2021**
+
+* Designing solutions for data visualisation problems within the JSreport environment
+* Developing UI/UX solutions and implementing using React, Redux, TypeScript and Node, Express, Docker
+
+Projects at VirtualMgr:
+
+* ***SmartpassQR | Node.js, Express, React, MongoDB, Azure***: Designed the UI/UX, front end and backend solution for a guest checking app
+
+* ***KPL Recruitment Platform | React, Node.js, Express, Azure, Docker***: Obtained requirements from the stakeholder, designed the full stack solution and independently implemented and deployed product that is still in use.
+
+**Undergaduate Software Engineer at Aecom | Nov. 2019 - Feb. 2020**
+
+* Designing and creating software solutions to solve problems that fit given requirements
+* Building experience in AngularJS and .NET framework
+* Larges piece of work done was to implement a theme builder for the EE reporting solution.
+
+
+##### Personal & Business projects
+**Hazel AI - Personal AI Teacher | React, Node, Express.js, Lambda**
+
+An AI teacher chatbot that adapts its teaching strategies to enhance the learning experience of users based on their responses.
+
+**Skool Clone | React, Cloudfront, Lambda, API Gateway, DDB**
+
+A platform designed to host and manage communities and courses offering tools for engagement and learning.
+
+**fluxo, ND Agency & Freelance Graphic design**
+
+Building automated outbound systems for B2B companies and local businesses, optimising Meta Ads, writing copy, selling, managing clients, hiring and outsourcing.
+
+**Semi-Pro Athlete | Football**
+
+Began as Gold Coast United's starting goalkeeper at 19 in the National Premier League, later captained Holland Park Hawks and Broadbeach FC in FQPL1. A 2022 injury led me to switch from playing to focusing on weightlifting, running and business.
