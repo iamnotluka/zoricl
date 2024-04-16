@@ -8,7 +8,15 @@ export default function Home() {
 		<div>
 			<Header previousPage="none" />
 			<DateSignature date="18 October 2023 at 8:36pm" />
+			<h4>Hi there! 👋</h4>
+			<p>I'm Luka, a software engineer and marketer.</p>
+			<img src="/profile_image.jpg" alt="Profile Image" />
 			<MarkdownSection markdownFileName="introduction.txt" />
+			<p>
+				Add me on <a href="https://www.linkedin.com/in/luka-zoric/">LinkedIn</a> or{" "}
+				<a href="https://www.instagram.com/zoricl_/">Instagram</a> to connect, or send an email to{" "}
+				<a href="mailto:luka@zoricl.io">luka@zoricl.io.</a>
+			</p>
 			<p>
 				If you're a recruiter or just interested what I did in past couple of years - read my{" "}
 				<Link to="/career">career summary</Link>.
