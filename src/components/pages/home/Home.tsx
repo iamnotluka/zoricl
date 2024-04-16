@@ -13,14 +13,14 @@ export default function Home() {
 				If you're a recruiter or just interested what I did in past couple of years - read my{" "}
 				<Link to="/career">career summary</Link>.
 			</p>
-			<h4>💻 Software Resources</h4>
+			<h4>💻 Software Projects</h4>
 			<p>
-				Knowledge base but strictly related to software. From how to pass an interview at a FANG company, to setting up
-				infrastructure for an MVP.
+				Feel free to check out my <a href="https://github.com/iamnotluka">GitHub</a> and deep dive my code. Any feedback
+				or question will be highly appreciated!
 			</p>
-			<p>
+			{/* <p>
 				Check it out <Link to="/software-resources">here.</Link>
-			</p>
+			</p>*/}
 			<h4>💡 Blog </h4>
 			<p>
 				Other useful stuff. Through to blogs <Link to="/knowledge-base">here.</Link> 📖

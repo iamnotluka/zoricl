@@ -1,0 +1,27 @@
+### Combinatorics
+
+Recently I was hustling some Leetcode questions and started warming up with some basics. 
+
+There was one question that seemed so simple, yet gave me a flashback from my Year 11 Maths class. For some reason, I could not crack the permutations and combinations in high school.
+
+The question was:
+
+**If there were 5 people in the meeting, in how many different ways can people shake hands?**
+
+Let's think about this problem logically and represent people as letters A, B, C, D and E.
+
+In how many ways are we able to pair these.
+
+Person A: AB, AC, AD, AE
+Person B: BA, BC, BD, BE
+Person C: CA, CB, CD, CE
+Person D: DA, DB, DC, DE
+Person E: EA, EB, EC, ED
+
+```
+const handshakes = () => {
+    return n!/(n)
+}
+```
+// Permutation and combination functions
+

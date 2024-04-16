@@ -1,9 +1,9 @@
-#### Hey there! 👋
+#### Hi there! 👋
 
-I am a software development engineer and marketer.
+I'm Luka, a software engineer and marketer.
 
-I worked for Amazon for 3 years building cool software and learning from people better than me.
+I am running [fluxo](https:www.fluxoagency.com), outbound marketing agency which is keeping me afloat while I travel, learn and look for fun projects to contribute to.
 
-I spend most of my time learning and building cool stuff.
+I've previously worked for Amazon for 3 years building cool software and learning from people better than me.
 
-🔗 Add me on [LinkedIn](https://www.linkedin.com/in/luka-zoric/) or [Instagram](https://www.instagram.com/zoricl_/) to connect, or send email to [luka@zoricl.io](mailto:luka@zoricl.io).
+Add me on [LinkedIn](https://www.linkedin.com/in/luka-zoric/) or [Instagram](https://www.instagram.com/zoricl_/) to connect, or send an email to [luka@zoricl.io](mailto:luka@zoricl.io).
