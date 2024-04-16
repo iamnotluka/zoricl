@@ -25,7 +25,7 @@ export default function Home() {
 				to the point where I can solve leetcode questions in the custom language.
 			</p>
 			<p>
-				Link to <a href="https://github.com/iamnotluka/interpreter-in-go">GitHub</a>.
+				Link to <a href="https://github.com/iamnotluka/interpreter-in-go">GitHub project</a>.
 			</p>
 			{/* <p>
 				Check it out <Link to="/software-resources">here.</Link>
