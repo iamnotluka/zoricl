@@ -15,11 +15,11 @@ Stats:
 **VirtualMgr (Junior Javascript Developer)**
 * Implemented various tasks - mostly in JavaScript
 * Worked on automating data visualization for clients
-* Project highlight: KPL Management: [https://www.kpltalents.com/](https://www.kpltalents.com/)
+* Project highlight: KPL Management
   * Interviewed stakeholders to obtain requirements
   * Developed a proposal, UI/UX design & technical design
   * Independently implemented and deployed the project to production
-  * Platform still in use
+  * Platform was in use until early 2024
 
 **Amazon (SDE 1-2)**
 * Tech stack: Java, JavaScript, TypeScript, AWS
