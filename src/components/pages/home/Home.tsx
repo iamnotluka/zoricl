@@ -13,9 +13,15 @@ export default function Home() {
 			<img src="/profile_image.jpg" alt="Profile Image" />
 			<MarkdownSection markdownFileName="introduction.txt" />
 			<p>
-				Add me on <a href="https://www.linkedin.com/in/luka-zoric/">LinkedIn</a> or{" "}
-				<a href="https://www.instagram.com/zoricl_/">Instagram</a> to connect, or send an email to{" "}
-				<a href="mailto:luka@zoricl.io">luka@zoricl.io.</a>
+				Add me on{" "}
+				<a target="_blank" href="https://www.linkedin.com/in/luka-zoric/">
+					LinkedIn
+				</a>{" "}
+				or{" "}
+				<a target="_blank" href="https://www.instagram.com/zoricl_/">
+					Instagram
+				</a>{" "}
+				to connect, or send an email to <a href="mailto:luka@zoricl.io">luka@zoricl.io.</a>
 			</p>
 			<p>
 				If you're a recruiter or just interested what I did in past couple of years - read my{" "}
