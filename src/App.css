@@ -30,7 +30,7 @@ h4 {
 
 [data-theme="light"] {
 	--background-color: white;
-	--yellow-color: #ffc527;
+	--yellow-color: black;
 	--headers-color: #434343;
 	--text-color: #404040;
 	--yellow-color-weight: 400;
