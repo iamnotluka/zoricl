@@ -23,8 +23,11 @@ export default function Home() {
 			</p>
 			<h4>💻 Software Projects</h4>
 			<p>
-				Feel free to check out my <a href="https://github.com/iamnotluka">GitHub</a> and deep dive my code. Any feedback
-				or question will be highly appreciated!
+				Feel free to check out my{" "}
+				<a target="_blank" href="https://github.com/iamnotluka">
+					GitHub
+				</a>{" "}
+				and deep dive my code. Any feedback or question will be highly appreciated!
 			</p>
 			<h5>Current Project: Interpreter in Go</h5>
 			<p className="subsection-date-li">Updated: 15th April 2024</p>
@@ -33,7 +36,11 @@ export default function Home() {
 				to the point where I can solve leetcode questions in the custom language.
 			</p>
 			<p>
-				Link to <a href="https://github.com/iamnotluka/interpreter-in-go">GitHub project</a>.
+				Link to{" "}
+				<a target="_blank" href="https://github.com/iamnotluka/interpreter-in-go">
+					GitHub project
+				</a>
+				.
 			</p>
 			{/* <p>
 				Check it out <Link to="/software-resources">here.</Link>
