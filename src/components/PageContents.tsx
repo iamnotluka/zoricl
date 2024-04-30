@@ -15,6 +15,11 @@ export interface KnowledgeBaseRoute {
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 	{
+		title: "How To Focus",
+		name: "how_to_focus",
+		date: "30 April 2024 at 4:01PM",
+	},
+	{
 		title: "Solving B2B Problems at Scale",
 		name: "solving_b2b_at_scale",
 		date: "20 November 2023 at 9:12PM",
