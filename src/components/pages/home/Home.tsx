@@ -55,18 +55,26 @@ export default function Home() {
 				www.interviewguru.io
 			</a>
 			<h5>MVMNT MTHD</h5>
-			<p className="subsection-date-li">Launch Date: 31st July 2025</p>
 			<p>We sell fitness programs for people who want to take their training to the next level.</p>
 			Link:{" "}
 			<a href="https://www.mvmntmthd.com" rel="noreferrer" target="_blank">
 				www.mvmntmthd.com
+			</a>
+			<h5>www.growth-engineering.io</h5>
+			<p>
+				I like to find cause effects in businesses which a lot of people found helpful. This is the contracting bit I
+				mentioned .
+			</p>
+			Link:{" "}
+			<a href="https://www.growth-engineering.io" rel="noreferrer" target="_blank">
+				www.growth-engineering.io
 			</a>
 			{/* <p>
 				Check it out <Link to="/software-resources">here.</Link>
 			</p>*/}
 			<h4>💡 Blog </h4>
 			<p>
-				Other useful stuff. Through to blogs <Link to="/knowledge-base">here.</Link> 📖
+				I like to think and write. All thoughts are my own. Through to blogs <Link to="/knowledge-base">here.</Link> 📖
 			</p>
 			<hr></hr>
 			<p className="subsection-date-li">
