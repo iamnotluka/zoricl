@@ -48,7 +48,7 @@ export default function Home() {
 				, but majority of my code is private...
 			</p>
 			<h5>InterviewGuru.io</h5>
-			<p className="subsection-date-li">Launch Date: 31st July 2025</p>
+			{/* <p className="subsection-date-li">Launch Date: 31st July 2025</p> */}
 			<p>Basically Leetcode with AI + mock interviews.</p>
 			Link:{" "}
 			<a href="https://www.interviewguru.io" rel="noreferrer" target="_blank">
@@ -63,7 +63,7 @@ export default function Home() {
 			<h5>www.growth-engineering.io</h5>
 			<p>
 				I like to find cause effects in businesses which a lot of people found helpful. This is the contracting bit I
-				mentioned .
+				mentioned.
 			</p>
 			Link:{" "}
 			<a href="https://www.growth-engineering.io" rel="noreferrer" target="_blank">
