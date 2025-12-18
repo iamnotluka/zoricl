@@ -40,22 +40,28 @@ export default function Home() {
 				.
 			</p>
 			<h4>💻 Projects</h4>
-			<p>
+			{/* <p>
 				Feel free to check out my{" "}
 				<a target="_blank" rel="noreferrer" href="https://github.com/iamnotluka">
 					GitHub
 				</a>{" "}
 				, but majority of my code is private...
-			</p>
+			</p> */}
 			<h5>InterviewGuru.io</h5>
 			{/* <p className="subsection-date-li">Launch Date: 31st July 2025</p> */}
-			<p>Basically Leetcode with AI + mock interviews.</p>
+			<p>
+				Basically Leetcode with AI + mock interviews. I built this with a friend from Amazon while preparing for
+				interviewing, landed a couple of customers and called it a day.
+			</p>
 			Link:{" "}
 			<a href="https://www.interviewguru.io" rel="noreferrer" target="_blank">
 				www.interviewguru.io
 			</a>
 			<h5>MVMNT MTHD</h5>
-			<p>We sell fitness programs for people who want to take their training to the next level.</p>
+			<p>
+				Designed and built automated acquisition system for these guys. This is the training I do, and the training best
+				HYROX athletes in Australia do.
+			</p>
 			Link:{" "}
 			<a href="https://www.mvmntmthd.com" rel="noreferrer" target="_blank">
 				www.mvmntmthd.com

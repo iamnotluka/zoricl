@@ -15,29 +15,19 @@ export interface KnowledgeBaseRoute {
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 	{
+		title: "The “Grass is Greener” Situation",
+		name: "the_grass_is_greener",
+		date: "20th November 2025 at 8:30PM",
+	},
+	{
 		title: "How To Focus",
 		name: "how_to_focus",
 		date: "30 April 2024 at 4:01PM",
 	},
 	{
-		title: "Solving B2B Problems at Scale",
-		name: "solving_b2b_at_scale",
-		date: "20 November 2023 at 9:12PM",
-	},
-	{
 		title: "Placebo Effect of Positive Thinking",
 		name: "why_be_positive",
 		date: "15 November 2023 at 7:20PM",
-	},
-	{
-		title: "Books And Resources",
-		name: "books_and_resources",
-		date: "25 October 2023 at 11:30PM",
-	},
-	{
-		title: "Happiness Algorithm",
-		name: "happiness_algorithm",
-		date: "18 October 2023 at 9:46PM",
 	},
 ];
 
