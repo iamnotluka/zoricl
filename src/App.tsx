@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import { PageContents } from "./components/PageContents";
 import "font-awesome/css/font-awesome.min.css";
