@@ -1,4 +1,4 @@
-Success is guaranteed, time is not. (16/7/25)
+#### Success is guaranteed, time is not.
 
 There’s a difference between figuring out what to do, knowing how to do it, and being efficient at it. It all starts with the initial goal, then working backwards through regression and constantly refining through feedback.
 
@@ -24,8 +24,8 @@ Once you’ve got that end goal, you use regression to work backwards. Each acti
 
 - What needs to be done (direction)
 - How to do it (execution)
-T
-he execution bit is the most important, direction is always going to be easy to define, execution (how to do it) is also fairly easy - the hardest one is doing it quickly, and actually getting it done.
+
+The execution bit is the most important, direction is always going to be easy to define, execution (how to do it) is also fairly easy - the hardest one is doing it quickly, and actually getting it done.
 
 The harder you work, the faster you get feedback - and feedback accelerates everything. That way, success becomes guaranteed, but the timeline is not.
 

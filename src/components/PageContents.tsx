@@ -15,6 +15,11 @@ export interface KnowledgeBaseRoute {
 
 const knowledgeBaseRoutes: KnowledgeBaseRoute[] = [
 	{
+		title: "Success Is Guaranteed, Time Is Not",
+		name: "success_is_guaranteed",
+		date: "16th July 2025",
+	},
+	{
 		title: "The “Grass is Greener” Situation",
 		name: "the_grass_is_greener",
 		date: "20th November 2025 at 8:30PM",
