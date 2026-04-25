@@ -116,22 +116,13 @@ p {
 }
 
 .gh-chart-wrap {
-  overflow: hidden;
   margin: 0rem 0 0.5rem;
 }
 
 .gh-chart {
   display: block;
-  width: 104.25%;
-  height: auto;
-  margin: -3.14% 0 0 -4.25%;
-}
-
-.gh-chart-svg {
-  display: block;
   width: 100%;
   height: auto;
-  margin: 0;
 }
 
 .section-row {
