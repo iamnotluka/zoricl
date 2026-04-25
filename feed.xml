@@ -25,14 +25,6 @@
     </item>
 
     <item>
-      <title>Everything is just an interpretation</title>
-      <link>https://zoricl.io/blog-everything-is-just-an-interpretation</link>
-      <guid>https://zoricl.io/blog-everything-is-just-an-interpretation</guid>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +1000</pubDate>
-      <description>My interpretation of Book 1, Chapter 1 of Lao Tzu's Tao Te Ching — on naming, desire, and holding the nameless source and the named world together.</description>
-    </item>
-
-    <item>
       <title>Building products with LLMs</title>
       <link>https://zoricl.io/blog-building-products-with-llms</link>
       <guid>https://zoricl.io/blog-building-products-with-llms</guid>
@@ -40,12 +32,5 @@
       <description>Why LLMs are at the limit of their current trajectory, why execution is becoming commoditised, and why your unique insight is the only remaining moat.</description>
     </item>
 
-    <item>
-      <title>The placebo effect of positive thinking</title>
-      <link>https://zoricl.io/blog-why-be-positive</link>
-      <guid>https://zoricl.io/blog-why-be-positive</guid>
-      <pubDate>Wed, 15 Nov 2023 00:00:00 +1000</pubDate>
-      <description>Why delusional confidence compounds: a 1988 chick-and-robot experiment, and what it suggests about persistence and results.</description>
-    </item>
   </channel>
 </rss>
