@@ -3,15 +3,22 @@
   if (!img) return;
 
   var src = img.getAttribute("src");
-  var proxied = "https://api.allorigins.win/raw?url=" + encodeURIComponent(src);
-  var maxAttempts = 4;
+  var proxies = [
+    "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(src),
+    "https://api.allorigins.win/raw?url=" + encodeURIComponent(src)
+  ];
+  var maxAttemptsPerProxy = 2;
   var baseDelayMs = 400;
 
-  function attempt(n) {
+  function attempt(proxyIdx, n) {
+    if (proxyIdx >= proxies.length) {
+      console.warn("[chart.js] all proxies exhausted");
+      return;
+    }
     var ctrl = new AbortController();
-    var timeout = setTimeout(function () { ctrl.abort(); }, 5000);
+    var timeout = setTimeout(function () { ctrl.abort(); }, 6000);
 
-    fetch(proxied, { signal: ctrl.signal })
+    fetch(proxies[proxyIdx], { signal: ctrl.signal })
       .then(function (r) {
         clearTimeout(timeout);
         return r.ok ? r.text() : Promise.reject("HTTP " + r.status);
@@ -19,10 +26,12 @@
       .then(install)
       .catch(function (err) {
         clearTimeout(timeout);
-        if (n < maxAttempts && document.querySelector("#gh-chart-img")) {
-          setTimeout(function () { attempt(n + 1); }, baseDelayMs * n);
+        if (!document.querySelector("#gh-chart-img")) return;
+        if (n < maxAttemptsPerProxy) {
+          setTimeout(function () { attempt(proxyIdx, n + 1); }, baseDelayMs * n);
         } else {
-          console.warn("[chart.js] gave up after " + n + " tries:", err);
+          console.warn("[chart.js] proxy " + proxyIdx + " failed:", err);
+          attempt(proxyIdx + 1, 1);
         }
       });
   }
@@ -52,7 +61,7 @@
     if (current && current.parentNode) current.parentNode.replaceChild(svg, current);
   }
 
-  attempt(1);
+  attempt(0, 1);
 })();
 
 
