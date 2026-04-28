@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What are neural networks and how do they work — Luka Zoric</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Luka Zoric" href="/feed.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMofbpTddBSm7QkmHZ" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="name">luka zoric</a>
+      <a href="/about.html">about</a>
+    </header>
+    <main>
+      <nav class="crumbs" aria-label="breadcrumb">
+        <a href="/">Home</a> / <span>What are neural networks and how do they work</span>
+      </nav>
+      <article>
+        <h1>What are neural networks and how do they work</h1>
+        <time datetime="2026-04-28" class="post-date">2026-04-28</time>
+
+        <p>Neural networks sound like a complex and mysterious two words that somehow model how our brain works. In reality, they are just a large mathematical expression of some inputs that produce meaningful outputs.</p>
+
+        <p>They take some input, run it through a series of calculations, and produce an output.</p>
+
+        <p>Same as:</p>
+
+        <p>$$f(x) = 3x^2 + 4x + 5$$</p>
+
+        <p>So in the above case, a simple mathematical expression has an output that is a digit, and an input that is one digit.</p>
+
+        <p>Neural nets are really that, but with millions and billions of parameters.</p>
+
+        <p>The way neural networks can be used is like so: say we are trying to get computers to recognise digits from 0 to 9.</p>
+
+        <p>As an input, we will be feeding it a $60 \times 60$ image of a handwritten image, and we want it to tell us what digit it is. We can model the output as an array of 10 numbers. For example:</p>
+
+        <p>$$[0.01,\ 0.02,\ 0.90,\ 0.01,\ 0.00,\ 0.02,\ 0.01,\ 0.01,\ 0.01,\ 0.01]$$</p>
+
+        <p>Each position represents the network's confidence for a digit.</p>
+
+        <p>So index 0 represents confidence that the output is 0.<br />
+        Index 1 represents confidence that the output is 1 and so on.</p>
+
+        <p>In the output above, the neural network predicted that the input image is digit 2.</p>
+
+        <p>Let's get back to the input.</p>
+
+        <p>Say we have a $60 \times 60$ pixel image.</p>
+
+        <p>That means that the image contains 3600 pixels ($60 \times 60$).</p>
+
+        <p>Each number represents one pixel.</p>
+
+        <p>The neural network takes this input and produces an output with 10 numbers:</p>
+
+        <p>Input: 3600 pixels<br />
+        Output: 10 confidence values</p>
+
+        <p>So conceptually, we want to build a mathematical function that does this:</p>
+
+        <p>$$60 \times 60 \text{ image} \longrightarrow \text{neural network} \longrightarrow 1 \times 10 \text{ output array}$$</p>
+
+        <p>For example, we give the network an image of a handwritten 1.</p>
+
+        <p>Ideally, we want the output to look something like this:</p>
+
+        <p>$$[0,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0]$$</p>
+
+        <p>This means:</p>
+
+        <p>The correct answer is digit 1.</p>
+
+        <p>But at the start, the neural network has no idea what it is doing.</p>
+
+        <p>Its internal values are basically random. So when we first give it an image of 1, it might output something like this:</p>
+
+        <p>$$[0.12,\ 0.04,\ 0.19,\ 0.08,\ 0.22,\ 0.03,\ 0.09,\ 0.11,\ 0.06,\ 0.06]$$</p>
+
+        <p>This is garbage to us.</p>
+
+        <p>The neural network does not know what the image means yet. So, the question becomes:</p>
+
+        <p>How do we adjust the mathematical expression that is a neural network so that its output becomes closer to the correct answer?</p>
+
+        <p>This is really what training a neural network means.</p>
+
+        <p>Training a neural network means adjusting the internal values of the mathematical expression so that it produces better outputs.</p>
+
+        <p>Those internal values are represented by neurons, which are numerical representations of a human neuron (just very simple versions). We will not get into those now, but for now, let's just remember that we have a whole bunch of neurons represented by weights and biases.</p>
+
+        <p>At the start, the weights and biases are completely random numbers. When initialised, the neural network knows nothing.</p>
+
+        <p>So the network gives bad predictions, it simply just calculates whatever came out of the initialisation.</p>
+
+        <p>The good news is that by giving it a lot of examples, we can slowly adjust the weights and biases until the network starts giving us useful predictions.</p>
+
+        <p>For example, imagine we have a huge dataset:</p>
+
+        <p>$$\begin{aligned}
+        \text{Image of 0} &\longrightarrow \text{correct answer 0} \\
+        \text{Image of 1} &\longrightarrow \text{correct answer 1} \\
+        &\ \ \vdots
+        \end{aligned}$$</p>
+
+        <p>Each training example contains two things:</p>
+
+        <p>Input = image<br />
+        Output = correct label</p>
+
+        <p>So we show the neural network an image, let it make a prediction, compare that prediction to the correct answer, and then adjust the network.</p>
+
+        <p>Over time, the network becomes a mathematical expression that maps inputs to meaningful outputs.</p>
+
+        <p>That's the whole idea of training a neural net.</p>
+
+        <p>A trained neural network is a mathematical function which is modeled by the data we gave it. It's a mathematical expression of the input data.</p>
+
+        <p>It's an $f(x) = 3x^2 + 4x + 5$, where $f(x)$ is our $1 \times 10$ array and $x$ is the image. However, in a neural network, instead of having 3 terms, we have closer to thousands to millions of parameters (we set these ourselves in the neural network initialisation).</p>
+
+        <p>So, now we know we need to initialise the network, we know what data we need to model it off of and what needs to happen for the neural network to be trained. How do we model knowledge of whether the neural network is right or wrong?</p>
+
+        <p>Say again we are given an image of 1.</p>
+
+        <p>The correct output should be</p>
+
+        <p>$$[0,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0]$$</p>
+
+        <p>But the network outputs:</p>
+
+        <p>$$[0.10,\ 0.20,\ 0.30,\ 0.05,\ 0.05,\ 0.10,\ 0.05,\ 0.05,\ 0.05,\ 0.05]$$</p>
+
+        <p>That is not good enough. The network gave 0.2 confidence to the correct answer, and gave 0.3 confidence to digit 2. It's clearly wrong, but we need to make sense of it so that we can use it to adjust our weights and biases to get it closer to the prediction.</p>
+
+        <p>That measurement is called the loss.</p>
+
+        <p>The loss function tells us:</p>
+
+        <p>How far was the network's prediction from the correct answer?</p>
+
+        <p>A high loss means the network was very wrong.</p>
+
+        <p>A low loss means the network was close.</p>
+
+        <p>We would model the accuracy of our mathematical expression of data this way because we can simply then just minimise the loss function to get the more accurate response.</p>
+
+        <p>So, how do we actually calculate the loss?</p>
+
+        <p>A simple way is to go position by position through the output, calculate the difference between what the network gave us and what the correct answer was, square that difference, and add all of those up.</p>
+
+        <p>Squaring the differences does two things. It makes sure that positive and negative errors don't cancel each other out, and it penalises bigger errors more than smaller ones.</p>
+
+        <p>Let's calculate it for our example.</p>
+
+        <p>$$\begin{aligned}
+        \text{Network output} &= [0.10,\ 0.20,\ 0.30,\ 0.05,\ 0.05,\ 0.10,\ 0.05,\ 0.05,\ 0.05,\ 0.05] \\
+        \text{Correct output} &= [0,\ 1,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0,\ 0]
+        \end{aligned}$$</p>
+
+        <p>For each position, we take the difference and square it:</p>
+
+        <p>$$\begin{aligned}
+        (0.10 - 0)^2 &= 0.01 \\
+        (0.20 - 1)^2 &= 0.64 \\
+        (0.30 - 0)^2 &= 0.09 \\
+        (0.05 - 0)^2 &= 0.0025 \\
+        (0.05 - 0)^2 &= 0.0025 \\
+        (0.10 - 0)^2 &= 0.01 \\
+        (0.05 - 0)^2 &= 0.0025 \\
+        (0.05 - 0)^2 &= 0.0025 \\
+        (0.05 - 0)^2 &= 0.0025 \\
+        (0.05 - 0)^2 &= 0.0025
+        \end{aligned}$$</p>
+
+        <p>Adding all of those up, we get a loss of $0.765$.</p>
+
+        <p>That single number now represents how wrong the network was for this image. If the network was perfect, the loss would be $0$. The further the prediction is from the correct answer, the bigger this number becomes.</p>
+
+        <p>This particular loss is called squared error, and if we divide it by the number of outputs we get the mean squared error (MSE), which is one of the simplest loss functions out there.</p>
+
+        <p>So now we have some sort of a meaningful representation of the accuracy of our mathematical representation. We will need to manually inspect each weight and essentially "make some bigger", and "make some smaller".</p>
+
+        <p>That would simply be impossible at the scale we need this at.</p>
+
+        <p>The neural network needs a system.</p>
+
+        <p>It needs to be efficient at being able to answer:</p>
+
+        <p>Which weights should I change, and by how much, so that the loss goes down?</p>
+
+        <p>This might sound familiar to you, but this is where derivatives become important.</p>
+
+        <p>They tell us how sensitive one value of a function is to a tiny change in another value. In the context of neural networks, we want to know how changes of weights affect the loss function, our representation of accuracy of our neural network.</p>
+
+        <p>This is exactly what the derivative tells us.</p>
+
+        <p>For every weight in the network, we want to know:<br />
+        If this weight increases slightly, what happens to the loss function?</p>
+
+        <p>If an increase of a weight makes our loss function go up, we should make it smaller.</p>
+
+        <p>The derivative gives us the direction, and tells us how each weight is affecting the loss.</p>
+
+        <p>Gradient descent is the method we use to reduce the loss. It's a process that, simply explained, involves looking for a minimum based on parameters given to it. In the context of neural networks, it means:</p>
+
+        <ol>
+          <li>Make a prediction</li>
+          <li>Compare prediction to the correct answer</li>
+          <li>Calculate the loss</li>
+          <li>Use derivatives to figure out how each weight affected the loss function</li>
+          <li>Adjust the weights in the direction that reduces the loss</li>
+          <li>Repeat</li>
+        </ol>
+
+        <p>This is how a neural network learns.</p>
+
+        <p>It's not thinking or reasoning, it's simply repeatedly adjusting a huge mathematical expression so that its outputs become more useful.</p>
+
+        <p>The gradient tells us the steepest increase in the loss.</p>
+
+        <p>So gradient descent moves in the opposite direction.</p>
+
+        <p>Because we want to minimise the loss.</p>
+
+        <p>And we update the weights such that:</p>
+
+        <p>$$\text{new weight} = \text{old weight} - \text{small step in the direction of the gradient of the loss}$$</p>
+
+        <p>That small step is controlled by something called the learning rate.</p>
+
+        <p>If the learning rate is too big, the network may jump around and fail to learn.</p>
+
+        <p>If the learning rate is too low, the network may learn too slowly.</p>
+
+        <p>So, over many examples and many updates, the neural network eventually becomes better.</p>
+
+        <p>It starts off as a random mathematical expression. And through training, it becomes a mathematical expression that captures patterns in the data.</p>
+
+        <p>For handwritten digits, it appears that it can recognise patterns like loops, strokes, curves, etc.</p>
+
+        <p>Not because someone manually programmed those rules, but because the network adjusted itself based on examples.</p>
+
+        <p>So the core idea of a neural network is that it is simply a mathematical function with adjustable internal values.</p>
+
+        <p>Training the neural network means adjusting those values so that the network maps inputs to useful outputs.</p>
+
+        <p>The loss function is a representation of how wrong the neural network is at representing that data.</p>
+
+        <p>Derivatives tell us how each weight affects the loss.</p>
+
+        <p>Gradient descent uses those derivatives to update the weights in the direction that reduces the loss.</p>
+
+        <p>So neural networks learn by iteratively resolving:</p>
+
+        <p>How was I wrong?<br />
+        Which part of me caused that error?<br />
+        How should I change those parts so that I am less wrong next time?</p>
+
+        <p>This is the whole idea behind neural networks.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>2026 Luka Zoric</span>
+      <span>Brisbane, AU</span>
+    </footer>
+    <script src="/date.js" defer></script>
+  </body>
+</html>

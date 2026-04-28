@@ -6,7 +6,7 @@
     <description>Notes, essays, and projects by Luka Zoric.</description>
     <language>en-au</language>
     <atom:link href="https://zoricl.io/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 25 Apr 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +1000</lastBuildDate>
 
     <item>
       <title>Note about the posts</title>
@@ -14,6 +14,14 @@
       <guid>https://zoricl.io/blog-note-about-the-posts</guid>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +1000</pubDate>
       <description>Why I publish: writing is how I measure my own growth, and disagreeing with my past self is the evidence.</description>
+    </item>
+
+    <item>
+      <title>What are neural networks and how do they work</title>
+      <link>https://zoricl.io/blog-what-are-neural-networks</link>
+      <guid>https://zoricl.io/blog-what-are-neural-networks</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +1000</pubDate>
+      <description>A neural network is a giant mathematical expression with adjustable parameters. This post walks through inputs, outputs, loss, derivatives, and gradient descent — how the thing actually learns.</description>
     </item>
 
     <item>

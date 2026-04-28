@@ -1,0 +1,12 @@
+{
+  "name": "zoricl-io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx -y serve dist"
+  },
+  "dependencies": {
+    "katex": "^0.16.11"
+  }
+}
