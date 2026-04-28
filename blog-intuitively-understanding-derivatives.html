@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intuitively understanding derivatives — Luka Zoric</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Luka Zoric" href="/feed.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMofbpTddBSm7QkmHZ" crossorigin="anonymous" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false});"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="name">luka zoric</a>
+      <a href="/about.html">about</a>
+    </header>
+    <main>
+      <nav class="crumbs" aria-label="breadcrumb">
+        <a href="/">Home</a> / <span>Intuitively understanding derivatives</span>
+      </nav>
+      <article>
+        <h1>Intuitively understanding derivatives</h1>
+        <time datetime="2026-04-28" class="post-date">2026-04-28</time>
+
+        <p>Let's assume:</p>
+
+        <p>$$f(x) = 3x^2 - 4x + 5$$</p>
+
+        <p>$f(3) = 20$.</p>
+
+        <p>If we plot this function, we'll get some sort of a parabola.</p>
+
+        <p>So what is a derivative and what is it telling us about the function?</p>
+
+        <p>The general definition is:</p>
+
+        <p>$$L = \lim_{h \to 0} \frac{f(X+h) - f(X)}{h}$$</p>
+
+        <p>What this basically tells us is how the change in $X$ affects the function output, more accurately: the derivative measures how sensitive the output is to a tiny change in the input.</p>
+
+        <p>So we can pick a number $X$ and a function $f$ where $X$ is a term in a function $f$ to see what the relationship is between the change in $X$ and output of $f(X)$.</p>
+
+        <p>Let's say $X = 2$.</p>
+
+        <p>$$f(2) = 3 \cdot 2^2 - 4 \cdot 2 + 5 = 9$$</p>
+
+        <p>Let's take a small step forwards, $h = 0.001$.</p>
+
+        <p>What would be the difference? Larger or smaller do we expect? If $X$ has gone up by $0.001$, what would be the change?</p>
+
+        <p>So let's test it out:</p>
+
+        <p>$$f(2+h) = f(2.001) = 3 \cdot 2.001^2 - 4 \cdot 2.001 + 5 = 9.008003$$</p>
+
+        <p>So our difference is:</p>
+
+        <p>$$f(2+h) - f(2) = 0.008003$$</p>
+
+        <p>To get the ratio, which is answering if my value went up by $0.008003$ by bumping my term by $h$:</p>
+
+        <p>$$\frac{0.008003}{h} = \frac{0.008003}{0.001} = 8.003$$</p>
+
+        <p>Meaning, around $X = 2$, for a very small increase in $X$, the output increases by roughly 8 times that increase. So if $h = 0.001$ expected change is roughly $0.008$.</p>
+
+        <p>Let's now see what happens as $h$ approaches $0$, instead of choosing a specific small value like $0.001$.</p>
+
+        <p>We can sub in the whole function into that.</p>
+
+        <p>Let's look at our function again:</p>
+
+        <p>$$f(x) = 3x^2 - 4x + 5$$</p>
+
+        <p>And the derivative definition is:</p>
+
+        <p>$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$</p>
+
+        <p>Let's first find $f(x+h)$ when $h$ approaches and becomes $0$.</p>
+
+        <p>$$\begin{aligned}
+        f(x+h) &= 3(x+h)^2 - 4(x+h) + 5 \\
+        &= 3(x^2 + 2xh + h^2) - 4x - 4h + 5 \\
+        &= 3x^2 + 6xh + 3h^2 - 4x - 4h + 5
+        \end{aligned}$$</p>
+
+        <p>From the function, we can minus the terms $3x^2$, $4x$ and $5$.</p>
+
+        <p>And we are left with:</p>
+
+        <p>$$6xh - 4h$$</p>
+
+        <p>Given we are dividing by $h$, we can simply get those out of the equation and get $6x - 4$.</p>
+
+        <p>And $6x - 4$ at $2$ is really $12 - 4$ which is $8$… very close to our $8.003$!</p>
+
+        <p>So at point $2$, for a very small change of $h$ the output changes $8.003$ times that $h$, and in our case, for $h = 0.001$, the value of $f(x)$ changed $h$ times that $8.003$, which was $0.008003$ and our output of $f(2.001)$ was $9.008003$!</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <span>2026 Luka Zoric</span>
+      <span>Brisbane, AU</span>
+    </footer>
+    <script src="/date.js" defer></script>
+  </body>
+</html>

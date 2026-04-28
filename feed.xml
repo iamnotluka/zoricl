@@ -17,6 +17,14 @@
     </item>
 
     <item>
+      <title>Intuitively understanding derivatives</title>
+      <link>https://zoricl.io/blog-intuitively-understanding-derivatives</link>
+      <guid>https://zoricl.io/blog-intuitively-understanding-derivatives</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +1000</pubDate>
+      <description>Working through what a derivative actually tells us — using a small numeric step, then taking the limit — to build the intuition that it measures how sensitive the output is to a tiny change in the input.</description>
+    </item>
+
+    <item>
       <title>What are neural networks and how do they work</title>
       <link>https://zoricl.io/blog-what-are-neural-networks</link>
       <guid>https://zoricl.io/blog-what-are-neural-networks</guid>
