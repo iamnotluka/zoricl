@@ -156,28 +156,38 @@ ul.posts {
 }
 
 ul.posts li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 1.25rem;
   padding: 0.75rem 0;
   align-items: baseline;
 }
 
-ul.posts time {
-  color: var(--fg3);
-  font-variant-numeric: tabular-nums;
-  flex-shrink: 0;
-  font-size: 12px;
+ul.posts .post-info {
+  min-width: 0;
 }
 
-ul.posts a {
-  flex: 1;
-  min-width: 0;
+ul.posts .post-info a {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-ul.posts li.pinned a::before {
+ul.posts .post-tags {
+  font-size: 11px;
+  color: var(--fg3);
+  margin-top: 0.15rem;
+}
+
+ul.posts time {
+  color: var(--fg3);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+ul.posts li.pinned .post-info a::before {
   content: "(Pinned) ";
   color: var(--fg2);
   font-style: italic;
@@ -202,7 +212,7 @@ article h1 {
   margin-bottom: 0.25rem;
 }
 
-.post-date {
+.post-meta {
   display: block;
   color: var(--fg3);
   margin-bottom: 2rem;
