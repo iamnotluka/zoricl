@@ -288,6 +288,12 @@ article blockquote {
   margin-bottom: 1rem;
 }
 
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
 hr {
   border: 0;
   border-top: 1px solid var(--border);
