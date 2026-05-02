@@ -6,7 +6,7 @@
     <description>Notes, essays, and projects by Luka Zoric.</description>
     <language>en-au</language>
     <atom:link href="https://zoricl.io/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 +1000</lastBuildDate>
 
     <item>
       <title>Note about the posts</title>
@@ -14,6 +14,14 @@
       <guid>https://zoricl.io/blog-note-about-the-posts</guid>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +1000</pubDate>
       <description>Why I publish: writing is how I measure my own growth, and disagreeing with my past self is the evidence.</description>
+    </item>
+
+    <item>
+      <title>Vectors are multi dimensional numbers</title>
+      <link>https://zoricl.io/blog-vectors-are-multi-dimensional-numbers</link>
+      <guid>https://zoricl.io/blog-vectors-are-multi-dimensional-numbers</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 +1000</pubDate>
+      <description>Building geometric intuition for vectors as multi dimensional numbers, walking through what they are, how to add them, and what scaling does.</description>
     </item>
 
     <item>
