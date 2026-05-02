@@ -196,9 +196,43 @@
 
         <h2>Adding vectors</h2>
 
-        <p>Adding vectors lets us combine two displacements, two forces, or any two quantities with direction and size. The intuition is easiest to see on the one dimensional number line.</p>
+        <p>Adding vectors lets us combine two displacements, two forces, or any two quantities with direction and size.</p>
 
-        <p>Take $2$ and $3$. The result is intuitively $5$, but on the number line what we actually do is walk $2$ steps from the origin, then walk $3$ more, ending at $5$. This is how we learned to add numbers in primary school.</p>
+        <p>The intuition is easiest to see on the one dimensional number line.</p>
+
+        <p>Take addition of $2$ and $3$. The result is $5$, but on the number line what we actually do is walk $2$ steps from the origin, then walk $3$ more, ending at $5$. This is how we learned to add numbers in primary school.</p>
+
+        <figure style="margin: 1.75rem auto; text-align: center;">
+          <svg viewBox="0 0 480 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line showing 2 plus 3 by walking 2 steps from the origin in blue, then 3 more steps in amber, landing at 5" style="width: 100%; max-width: 460px; height: auto;">
+            <defs>
+              <marker id="ah-blue-add" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+              <marker id="ah-amber-add" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker>
+            </defs>
+            <line x1="40" y1="85" x2="440" y2="85" stroke="#555" stroke-width="1.25"/>
+            <g stroke="#555" stroke-width="1">
+              <line x1="60" y1="78" x2="60" y2="92"/>
+              <line x1="120" y1="81" x2="120" y2="89"/>
+              <line x1="180" y1="81" x2="180" y2="89"/>
+              <line x1="240" y1="81" x2="240" y2="89"/>
+              <line x1="300" y1="81" x2="300" y2="89"/>
+              <line x1="360" y1="81" x2="360" y2="89"/>
+              <line x1="420" y1="81" x2="420" y2="89"/>
+            </g>
+            <g font-family="JetBrains Mono, monospace" font-size="11" fill="#555" text-anchor="middle">
+              <text x="60" y="106">0</text>
+              <text x="120" y="106">1</text>
+              <text x="180" y="106">2</text>
+              <text x="240" y="106">3</text>
+              <text x="300" y="106">4</text>
+              <text x="360" y="106">5</text>
+              <text x="420" y="106">6</text>
+            </g>
+            <line x1="60" y1="44" x2="178" y2="44" stroke="#2563eb" stroke-width="1.75" marker-end="url(#ah-blue-add)"/>
+            <text x="120" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#2563eb">+2</text>
+            <line x1="180" y1="44" x2="358" y2="44" stroke="#d97706" stroke-width="1.75" marker-end="url(#ah-amber-add)"/>
+            <text x="270" y="34" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#d97706">+3</text>
+          </svg>
+        </figure>
 
         <p>The same idea works in two dimensions, with:</p>
 
@@ -249,33 +283,37 @@
 
         <p>$$\vec{v} + \vec{w} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} + \begin{bmatrix} 3 \\ 5 \end{bmatrix} = \begin{bmatrix} 2 + 3 \\ 1 + 5 \end{bmatrix} = \begin{bmatrix} 5 \\ 6 \end{bmatrix}$$</p>
 
+        <p>Or generally, you add component by component:</p>
+
+        <p>$$\begin{bmatrix} x_1 \\ y_1 \end{bmatrix} + \begin{bmatrix} x_2 \\ y_2 \end{bmatrix} = \begin{bmatrix} x_1 + x_2 \\ y_1 + y_2 \end{bmatrix}$$</p>
+
         <p>The geometric walk and the component-wise sum are two ways of looking at the same operation.</p>
 
         <p>It's also worth noting that $\vec{v} + \vec{w}$ gives the same result as $\vec{w} + \vec{v}$. The walks can be done in either order. On the number line this is obvious because $2 + 3 = 3 + 2$. On the 2D plane it's a bit more interesting, because the two walks trace out a parallelogram and end up at the same corner either way. Worth remembering, because plenty of operations on vectors and matrices don't behave this nicely.</p>
 
         <p>The same intuition holds in 3D and beyond.</p>
 
-        <p>Multi dimensional numbers, you see.</p>
+        <p>Just like numbers, just in multiple dimensions!</p>
 
         <h2>Scaling vectors</h2>
 
-        <p>Multiplying a vector by some constant is really just stretching, squishing, or reversing it.</p>
+        <p>We refer to multiplying a vector by some constant as scaling the vector. When we scale a vector, we really just stretch, squish, or flip it.</p>
 
         <p>Take $\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$.</p>
 
-        <p>Multiplying by $3$:</p>
+        <p>Multiplying by a constant $3$:</p>
 
         <p>$$3\vec{v} = 3 \cdot \begin{bmatrix} 2 \\ 1 \end{bmatrix} = \begin{bmatrix} 6 \\ 3 \end{bmatrix}$$</p>
 
         <p>This points in the same direction as $\vec{v}$ but is three times as long.</p>
 
-        <p>Multiplying by $\frac{1}{2}$:</p>
+        <p>Multiplying by a constant $\frac{1}{2}$:</p>
 
         <p>$$\frac{1}{2}\vec{v} = \begin{bmatrix} 1 \\ 0.5 \end{bmatrix}$$</p>
 
         <p>Same direction, half the length.</p>
 
-        <p>Multiplying by $-1$:</p>
+        <p>Multiplying by a constant $-1$:</p>
 
         <p>$$-\vec{v} = \begin{bmatrix} -2 \\ -1 \end{bmatrix}$$</p>
 
@@ -327,9 +365,13 @@
           </svg>
         </figure>
 
-        <p>This process is called scaling, and the number doing the scaling is called a scalar. The name is exactly as literal as it sounds. It scales the vector.</p>
+        <p>Or generally, you multiply each component by the constant:</p>
 
-        <h2>Why this framing matters</h2>
+        <p>$$c \cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} cx \\ cy \end{bmatrix}$$</p>
+
+        <p><strong>This process is called scaling, and the number doing the scaling is called a scalar. The name is exactly as literal as it sounds. It scales the vector.</strong></p>
+
+        <h2>Final notes</h2>
 
         <p>Treating a vector as a multi dimensional number, rather than a list with operations bolted on, is what makes the rest of linear algebra start to feel connected for me, instead of a stack of unrelated rules.</p>
 
