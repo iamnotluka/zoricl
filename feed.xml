@@ -29,7 +29,7 @@
       <link>https://zoricl.io/blog-intuitively-understanding-derivatives</link>
       <guid>https://zoricl.io/blog-intuitively-understanding-derivatives</guid>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +1000</pubDate>
-      <description>Working through what a derivative actually tells us — using a small numeric step, then taking the limit — to build the intuition that it measures how sensitive the output is to a tiny change in the input.</description>
+      <description>Working through what a derivative actually tells us - using a small numeric step, then taking the limit - to build the intuition that it measures how sensitive the output is to a tiny change in the input.</description>
     </item>
 
     <item>
@@ -37,7 +37,7 @@
       <link>https://zoricl.io/blog-what-are-neural-networks</link>
       <guid>https://zoricl.io/blog-what-are-neural-networks</guid>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +1000</pubDate>
-      <description>A neural network is a giant mathematical expression with adjustable parameters. This post walks through inputs, outputs, loss, derivatives, and gradient descent — how the thing actually learns.</description>
+      <description>A neural network is a giant mathematical expression with adjustable parameters. This post walks through inputs, outputs, loss, derivatives, and gradient descent - how the thing actually learns.</description>
     </item>
 
     <item>
@@ -45,7 +45,7 @@
       <link>https://zoricl.io/blog-intent-as-foundation</link>
       <guid>https://zoricl.io/blog-intent-as-foundation</guid>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +1000</pubDate>
-      <description>A compact note: if consciousness is fundamental, intent is the foundation of work — build software that turns unique insights into products.</description>
+      <description>A compact note: if consciousness is fundamental, intent is the foundation of work - build software that turns unique insights into products.</description>
     </item>
 
     <item>
