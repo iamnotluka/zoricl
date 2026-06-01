@@ -93,9 +93,7 @@ function chunkScript(text, maxChars) {
 
 async function narrate(openai, title, articleHtml) {
   const system =
-    "You convert a blog post into a clean, natural spoken-word narration script for text-to-speech. Output ONLY the words to be spoken: no markdown, no headings, no stage directions, no URLs. Begin with exactly: 'This is " +
-    title +
-    ", by Luka Zoric.' Then narrate the article in a warm, clear, conversational voice. Convert math notation and symbols into spoken English (for example, x squared, the square root of two, the integral of f of x). Do not read code blocks verbatim; instead summarize in one sentence what the code does, or skip it. For figures or diagrams, give a one-line description from their labels, or skip them. Expand abbreviations sensibly. Preserve the author's meaning and structure, using natural sentences a person would actually say aloud.";
+    "You convert a blog post into a clean, natural spoken-word narration script for text-to-speech. Output ONLY the words to be spoken: no markdown, no headings, no stage directions, no URLs, no introduction. Do not announce the title or author; begin directly with the article's own words. Narrate the article in a warm, clear, conversational voice. Convert math notation and symbols into spoken English (for example, x squared, the square root of two, the integral of f of x). Do not read code blocks verbatim; instead summarize in one sentence what the code does, or skip it. For figures or diagrams, give a one-line description from their labels, or skip them. Expand abbreviations sensibly. Preserve the author's meaning and structure, using natural sentences a person would actually say aloud.";
 
   const narrationHtml = articleHtml.replace(
     /<div class="post-meta">[\s\S]*?<\/div>/i,
