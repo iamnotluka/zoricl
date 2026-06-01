@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "dev": "node build.js && npx -y serve dist"
+    "dev": "node build.js && npx -y serve dist",
+    "tts": "node --env-file=.env.local tts.js"
   },
   "dependencies": {
-    "katex": "^0.16.11"
+    "katex": "^0.16.11",
+    "openai": "^6.39.1"
   }
 }
