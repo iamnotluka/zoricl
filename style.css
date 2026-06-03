@@ -241,6 +241,11 @@ article h1 {
 .listen-btn:hover {
   background: rgba(0, 0, 0, 0.08);
 }
+.listen-icon {
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+}
 
 .listen-time {
   font-family: var(--mono);

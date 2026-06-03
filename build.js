@@ -60,9 +60,9 @@ function loadAudioManifest() {
 function injectPlayer(html, slug) {
   const player =
     '<div class="listen">\n' +
-    '          <button class="listen-btn" type="button" aria-label="Play narration">▶ listen instead</button>\n' +
-    '          <span class="listen-time">0:00</span>\n' +
-    '          <audio preload="none" src="/assets/audio/' +
+    '          <button class="listen-btn" type="button" aria-label="Play narration"><span class="listen-icon">▶</span>Audio</button>\n' +
+    '          <span class="listen-time"></span>\n' +
+    '          <audio preload="metadata" src="/assets/audio/' +
     slug +
     '.mp3"></audio>\n' +
     "        </div>";

@@ -8,18 +8,25 @@
 
   document.querySelectorAll(".listen").forEach(function (el) {
     var btn = el.querySelector(".listen-btn");
+    var icon = el.querySelector(".listen-icon");
     var time = el.querySelector(".listen-time");
     var audio = el.querySelector("audio");
     if (!btn || !audio) return;
 
-    function setPaused() {
-      btn.textContent = "▶ listen instead";
-    }
-    function setPlaying() {
-      btn.textContent = "❚❚ playing";
+    function showRemaining() {
+      if (!time) return;
+      var remaining = audio.duration - audio.currentTime;
+      time.textContent = fmt(remaining);
     }
 
-    setPaused();
+    function setPlayIcon() {
+      if (icon) icon.textContent = "▶";
+    }
+    function setPauseIcon() {
+      if (icon) icon.textContent = "❚❚";
+    }
+
+    setPlayIcon();
 
     btn.addEventListener("click", function () {
       if (audio.paused) {
@@ -29,20 +36,18 @@
       }
     });
 
-    audio.addEventListener("play", setPlaying);
-    audio.addEventListener("pause", setPaused);
+    audio.addEventListener("play", setPauseIcon);
+    audio.addEventListener("pause", setPlayIcon);
 
-    audio.addEventListener("timeupdate", function () {
-      if (time) time.textContent = fmt(audio.currentTime);
-    });
-
-    audio.addEventListener("loadedmetadata", function () {
-      if (time) time.textContent = fmt(audio.duration);
-    });
+    audio.addEventListener("loadedmetadata", showRemaining);
+    audio.addEventListener("timeupdate", showRemaining);
 
     audio.addEventListener("ended", function () {
-      setPaused();
-      if (time) time.textContent = fmt(audio.duration);
+      setPlayIcon();
+      showRemaining();
     });
+
+    // If metadata is already available (cached), show the total straight away.
+    if (audio.readyState >= 1) showRemaining();
   });
 })();
