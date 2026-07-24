@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "dev": "node build.js && npx -y serve dist",
-    "tts": "node --env-file=.env.local tts.js"
+    "dev": "node build.js && npx -y serve dist"
   },
   "dependencies": {
     "katex": "^0.16.11",

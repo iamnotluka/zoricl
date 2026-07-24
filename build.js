@@ -8,7 +8,6 @@ const DIST = path.join(SRC, "dist");
 const STATIC_PATHS = [
   "style.css",
   "date.js",
-  "listen.js",
   "favicon.ico",
   "feed.xml",
   "profile_image.jpg",
@@ -43,45 +42,6 @@ function renderMath(html) {
 
 function stripKatexScripts(html) {
   return html.replace(/[ \t]*<script\b[^>]*katex[^>]*>[\s\S]*?<\/script>\n?/g, "");
-}
-
-function loadAudioManifest() {
-  const p = path.join(SRC, "assets", "audio", "manifest.json");
-  if (!fs.existsSync(p)) return { version: 1, posts: {} };
-  try {
-    const m = JSON.parse(fs.readFileSync(p, "utf8"));
-    if (m && typeof m === "object" && m.posts) return m;
-  } catch (e) {
-    console.warn(`audio manifest: unreadable (${e.message}); skipping injection`);
-  }
-  return { version: 1, posts: {} };
-}
-
-function injectPlayer(html, slug) {
-  const player =
-    '<div class="listen">\n' +
-    '          <button class="listen-btn" type="button" aria-label="Play narration"><span class="listen-icon">▶</span>Audio</button>\n' +
-    '          <span class="listen-time"></span>\n' +
-    '          <audio preload="metadata" src="/assets/audio/' +
-    slug +
-    '.mp3"></audio>\n' +
-    "        </div>";
-
-  let injected = false;
-  html = html.replace(
-    /(<div class="post-meta">[\s\S]*?<\/div>)/,
-    (m) => {
-      injected = true;
-      return m + "\n\n        " + player;
-    },
-  );
-  if (!injected) return html;
-
-  html = html.replace(
-    /<\/body>/,
-    '    <script src="/listen.js" defer></script>\n  </body>',
-  );
-  return html;
 }
 
 function findChartUrl() {
@@ -122,8 +82,6 @@ async function main() {
     }
   }
 
-  const audioManifest = loadAudioManifest();
-
   const htmlFiles = fs.readdirSync(SRC).filter((f) => f.endsWith(".html"));
   for (const file of htmlFiles) {
     let html = fs.readFileSync(path.join(SRC, file), "utf8");
@@ -131,10 +89,6 @@ async function main() {
     html = stripKatexScripts(html);
     if (chartReplacement && chartUrl) {
       html = html.split(chartUrl).join(chartReplacement);
-    }
-    const slug = file.replace(/\.html$/, "");
-    if (audioManifest.posts[slug]) {
-      html = injectPlayer(html, slug);
     }
     fs.writeFileSync(path.join(DIST, file), html);
   }
